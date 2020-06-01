@@ -39,7 +39,11 @@ const Container = styled.div`
   background-repeat: no-repeat;
   background-position: 50% 95%;
   @media (max-width: ${theme.pageWidth.l}px) {
+    padding-top: 10vh;
+    max-height: 90vh;
     background-size: 100%;    
+    min-height: 500px;
+    background-position: 50% 88%;
   }
 `;
 
