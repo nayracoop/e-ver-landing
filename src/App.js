@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import './assets/styles/main.css';
-import UnderConstruction from './components/sections/UnderConstruction'
+import Home from './components/sections/Home'
 
 const theme = {
   colors: {
@@ -39,7 +39,7 @@ class App extends Component {
     return (
       <Container ref={this.container} className="App">
         <ThemeProvider theme={theme}>
-          <UnderConstruction></UnderConstruction>
+          <Home></Home>
         </ThemeProvider>
       </Container>
     );
