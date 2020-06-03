@@ -1,5 +1,6 @@
 {
-  "name": "jackpot-exquisito",
+  "name": "e-ver-marketing-landing",
+  "homepage": "http://e-ver.com.ar",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
