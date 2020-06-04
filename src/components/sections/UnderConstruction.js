@@ -18,9 +18,9 @@ const Title = styled.h1`
     }
 `
 const Text = styled.p`
-    font-family: 'rotundaextra_bold', sans-serif;
+    font-family: ${(props) => props.theme.fonts.display};
     font-size: 4.8rem;
-    color: #494066;
+    color: ${(props) => props.theme.colors.primary};
     @media (max-width: ${(props) => props.theme.pageWidth.l}px) {
         font-size: 2.25rem;
         max-width: 500px;
@@ -36,7 +36,7 @@ const InnerContainer = styled.div`
         }
     }
     p {
-        font-family: 'rotundamedium', sans-serif;
+        font-family: ${(props) => props.theme.fonts.title};
         margin-top: 20px;
         font-size: 2rem;
         @media (max-width: ${(props) => props.theme.pageWidth.l}px) {

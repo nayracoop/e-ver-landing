@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'rotundaextra_bold';
+  font-family: 'rotundabold';
   src: url('../fonts/rotunda-extrabold.eot');
   src: url('../fonts/rotunda-extrabold.eot?#iefix') format('embedded-opentype'),
        url('../fonts/rotunda-extrabold.woff2') format('woff2'),
@@ -25,7 +25,7 @@
 }
 
 @font-face {
-    font-family: 'rotunda_regularregular';
+    font-family: 'rotundaregular';
     src: url('../fonts/rotunda-regular.eot');
     src: url('../fonts/rotunda-regular.eot?#iefix') format('embedded-opentype'),
          url('../fonts/rotunda-regular.woff2') format('woff2'),
@@ -38,7 +38,7 @@
 }
 
 body, html, #root{
-  font-family: 'rotunda_regularregular', sans-serif;
+  font-family: 'rotundaregular', sans-serif;
   width:100%;
   height: 100%;
   margin: 0;

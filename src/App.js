@@ -8,13 +8,17 @@ import BackgroundImg from './assets/img/bg.svg'
 
 const theme = {
   colors: {
-    text: "#04090d",
-    textOpacity: "0.7",
-    background: "#fff",
-    backgroundOpacity: "0.3",
+    primary: "#494066",
+    secondary: "#f72d7d",
+    text: "#444444",
+    gradient1: "rgba(255,46,121,1)",
+    gradient2: "rgba(194,41,152,1)",
+    gradient: "linear-gradient(90deg, rgba(255,46,121,1) 0%, rgba(194,41,152,1) 100%)"
   },
   fonts: {
-    display: "'Roboto Slab', serif",
+    display: "'rotundabold', sans-serif",
+    title: "'rotundamedium', sans-serif",
+    text: "'rotundaregular', sans-serif"
   },
   pageWidth: {
     xxl: 1366,
