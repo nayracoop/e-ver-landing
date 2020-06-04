@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { withRouter, Route } from "react-router-dom"
 
-import UnderConstruction from './components/layout/sections/UnderConstruction'
-import Home from '.'
+import UnderConstruction from './components/sections/UnderConstruction'
+import Home from './components/templates/Home'
 import BackgroundImg from './assets/img/bg.svg'
 
 const theme = {
@@ -35,7 +35,7 @@ const Container = styled.div`
   min-height: 650px;
   max-height: 84vh;
   padding-top: 16vh;
-  //background-image: url(${BackgroundImg});
+  background-image: url(${BackgroundImg});
   background-size: 65%;
   background-repeat: no-repeat;
   background-position: 50% 95%;
@@ -65,7 +65,7 @@ class App extends Component {
             />
           </Route>
           <Route path="/home" exact>
-            Home
+            <Home></Home>
           </Route>
         </ThemeProvider>
       </Container>
