@@ -1,10 +1,13 @@
 import React, { Component } from "react";
-import styled, { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import { withRouter, Route } from "react-router-dom"
 
+import { Wrapper } from './components/layout/Wrapper'
 import UnderConstruction from './components/sections/UnderConstruction'
 import Home from './components/templates/Home'
-import BackgroundImg from './assets/img/bg.svg'
+
+//import BackgroundImg from './assets/img/bg.svg'
+
 
 const theme = {
   colors: {
@@ -32,27 +35,6 @@ const theme = {
   articleMaxWidth: 680,
 };
 
-const Container = styled.div`
-  position: relative;
-  margin: 0 auto;
-  padding: 0;
-  //width: 90%;
-  min-height: 650px;
-  max-height: 84vh;
-  //padding-top: 16vh;
-  background-image: url(${BackgroundImg});
-  background-size: 65%;
-  background-repeat: no-repeat;
-  background-position: 50% 95%;
-
-  @media (max-width: ${theme.pageWidth.l}px) {
-    padding-top: 10vh;
-    max-height: 90vh;
-    background-size: 100%;    
-    min-height: 500px;
-    background-position: 50% 88%;
-  }
-`;
 
 class App extends Component {
   componentDidUpdate(prevProps) {
@@ -60,7 +42,7 @@ class App extends Component {
 
   render() {
     return (
-      <Container ref={this.container} className="App">
+      <Wrapper ref={this.container} className="App">
         <ThemeProvider theme={theme}>
           <Route path="/" exact>
             <UnderConstruction
@@ -73,7 +55,7 @@ class App extends Component {
             <Home></Home>
           </Route>
         </ThemeProvider>
-      </Container>
+      </Wrapper>
     );
   }
 }
