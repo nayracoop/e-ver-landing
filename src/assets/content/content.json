@@ -1,7 +1,6 @@
 {
-    "sections": [
-        {
-            "name": "Cover",
+    "sections": {
+        "cover": {
             "slides": [
                 {
                     "text": "¡Organizamos tu evento virtual!",
@@ -20,17 +19,15 @@
                 }
             ]
         },
-        {
-            "name": "About",
+        "about": {
             "title": "¿Qué es E-ver? ",
             "text": "E-ver es  un servicio multifacético que proporciona una verdadera solución en la organización de eventos a distancia. Involucra tanto las necesidades técnicas como los requerimientos comunicacionales que necesitás para crear tu evento. ",
             "image": ""
         },
-        {
-            "name": "Services",
+        "services": {
             "title": "¿Por qué elegir e-ver para realizar tu próximo evento a distancia?",
             "text": "Estas son algunas de las características que hacen de e-ver un producto único y confiable.",
-            "services": [
+            "service": [
                 {
                     "name": "Landing page",
                     "text": " con la identidad de tu evento.",
@@ -142,8 +139,7 @@
                 }
             ]
         },
-        {
-            "name": "Pricing",
+        "packages": {
             "title": "Elegí uno de los Packs disponibles",
             "text": "Si no encontrás la funcionalidad que necesitás, solicitá más información a través del formulario de contacto",
             "Packages": [
@@ -329,8 +325,7 @@
                 }
             ]
         },
-        {
-            "name": "Contact",
+        "contact": {
             "title": "Contactános! Estamos para ayudarte",
             "text": "Completá el formulario y te responderemos dentro de las siguientes 24 hs. También podés enviar un email con tu consulta a info@ever.com o contactarnos a través de nuestras redes sociales.",
             "formInputs": [
@@ -342,8 +337,7 @@
             ],
             "button": "Enviar"
         },
-        {
-            "name": "Footer",
+        "footer": {
             "title": "",
             "text": "E-ver es un servicio multifacético que proporciona una verdadera solución en la organización de eventos a distancia. Involucra tanto las necesidades técnicas como los requerimientos comunicacionales que necesitás para crear tu evento. ",
             "formInputs": [
@@ -355,5 +349,5 @@
             ],
             "button": "Enviar"
         }
-    ]
+    }
 }

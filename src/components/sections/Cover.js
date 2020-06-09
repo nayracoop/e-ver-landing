@@ -1,5 +1,6 @@
 import React from 'react'
-import { Wrapper, SectionContainer } from '../layout'
+import Wrapper from '../layout/Wrapper'
+import SectionContainer from '../layout/SectionContainer'
 
 
 const Cover = (props) => {
