@@ -1,0 +1,359 @@
+{
+    "sections": [
+        {
+            "name": "Cover",
+            "slides": [
+                {
+                    "text": "¡Organizamos tu evento virtual!",
+                    "image": "",
+                    "buttonText": ""
+                },
+                {
+                    "text": "Creamos experiencias a la medida de tu imaginación",
+                    "image": "",
+                    "buttonText": ""
+                },
+                {
+                    "text": "Tenemos un pack para el evento que estás pensando",
+                    "image": "",
+                    "buttonText": ""
+                }
+            ]
+        },
+        {
+            "name": "About",
+            "title": "¿Qué es E-ver? ",
+            "text": "E-ver es  un servicio multifacético que proporciona una verdadera solución en la organización de eventos a distancia. Involucra tanto las necesidades técnicas como los requerimientos comunicacionales que necesitás para crear tu evento. ",
+            "image": ""
+        },
+        {
+            "name": "Services",
+            "title": "¿Por qué elegir e-ver para realizar tu próximo evento a distancia?",
+            "text": "Estas son algunas de las características que hacen de e-ver un producto único y confiable.",
+            "services": [
+                {
+                    "name": "Landing page",
+                    "text": " con la identidad de tu evento.",
+                    "list": [
+                        "Presentación del evento (SLIDE)",
+                        "Cuenta regresiva",
+                        "Quiénes somos ",
+                        "Invitación a la conferencia ",
+                        "Cronograma ",
+                        "Novedades",
+                        "Acreditación al evento ",
+                        "Visualización de sponsor",
+                        "Formulario de contacto "
+                    ]
+                },
+                {
+                    "name": "Acreditación",
+                    "text": "Para llegar a todos tus participantes",
+                    "list": [
+                        "Usuarios y permisos",
+                        "Inscripciones al evento"
+                    ]
+                },
+                {
+                    "name": "Streaming en vivo",
+                    "text": " Integración con la plataforma que elijas",
+                    "list": [
+                        "Integración con plataformas de streaming de uno o varios panelistas (ej. zoom, livestream)",
+                        "Integración con streaming en vivo en redes sociales (Ej. Youtube live, Facebook live)",
+                        "Live chat para asistentes",
+                        "Notificaciones en pantalla de conferencias próximas a iniciar."
+                    ]
+                },
+                {
+                    "name": "Gamificación e interacción",
+                    "text": "Creamos experiencias interactivas. ",
+                    "list": [
+                        " Sistema de preguntas/respuestas interactivo entre asistentes y orador",
+                        " Calendario de actividades",
+                        "Sistema de trivias",
+                        "Sistema de encuestas",
+                        "Sistema de sorteos en vivo",
+                        "Feed de redes sociales integrado con #hashtags",
+                        "Mapa de navegación interactivo (Ej; interacción de recorrido virtual de un plano, a partir de una imagen)",
+                        "Cabina de fotos virtual para compartir en redes sociales (Ej, foto en panel de sponsors)",
+                        "Galería de fotos tomadas en la cabina con información integrada de la empresa o sponsors (Ej: logos, marca de agua, marco)"
+                    ]
+                },
+                {
+                    "name": "Campaña en redes sociales",
+                    "text": "Para hacerle saber al mundo todo lo que sucedió, sucede y sucederá en tu evento.",
+                    "list": [
+                        "Generación de contenido para RRSS (FB+Ins+LKD+TW)* (hasta 12 publicaciones) *El servicio no incluye administración de redes sociales",
+                        "Redacción y planificación de estrategia",
+                        "Diseños adaptados a todas las plataformas",
+                        "Grilla de planificación mensual",
+                        " Generación de contenido para RRSS (FB+Ins+LKD+TW)* (hasta 16 publicaciones) *El servicio no incluye administración de redes sociales",
+                        "Diseño de GIF (hasta 4)",
+                        "Generación de contenido para RRSS (FB+Ins+LKD+TW)* (hasta 24 publicaciones) *El servicio no incluye administración de redes sociales",
+                        "Audiovisuales en motion graphics (1 spot de promoción del evento de hasta 1 minuto)"
+                    ]
+                },
+                {
+                    "name": "Producción general del evento",
+                    "text": "Para que no tengas que preocuparte por nada, nos encargamos de todo, de principio a fin.",
+                    "list": [
+                        "Relevamiento de materiales comunicacionales necesarios para el evento",
+                        "Organización de la información",
+                        "Coordinación general del evento",
+                        "Organización de cronograma",
+                        "Contacto con expositores"
+                    ]
+                },
+                {
+                    "name": "Piezas de comunicación",
+                    "text": "Campañas de Google, Facebook e Instagram Ads: para llegar a todo tu público potencial.",
+                    "list": [
+                        "Red 360: Campaña en las distintas plataformas de Google ",
+                        "Generación e implementación de campaña",
+                        "Control y actualización",
+                        "Creación de anuncios sobre la base de palabras clave y segmento de público a definir"
+                    ]
+                },
+                {
+                    "name": "Piezas de comunicación",
+                    "text": " diseño, comunicación y creatividad al servicio de tu evento",
+                    "list": []
+                },
+                {
+                    "name": "Campañas de Google, Facebook e Instagram Ads:",
+                    "text": "para llegar a todo tu público potencial.",
+                    "list": [
+                        "Red 360: Campaña en las distintas plataformas de Google ",
+                        "Generación e implementación de campaña",
+                        "Control y actualización",
+                        "Creación de anuncios sobre la base de palabras clave y segmento de público a definir"
+                    ]
+                },
+                {
+                    "name": "Soporte técnico y asistencia personalizada",
+                    "text": "Te ofrecemos feedback permanente. Desde que contratás nuestros servicios hasta que tu evento finaliza, te acompañamos y nos ocupamos de cada detalle. ",
+                    "list": [
+                        "Soporte técnico durante el evento",
+                        "Integración con Analytics",
+                        "Galería de conferencias pasadas ",
+                        "Integración con chatbot para FAQs",
+                        "Integración con sistema de asistencia virtual para helpdesk"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Pricing",
+            "title": "Elegí uno de los Packs disponibles",
+            "text": "Si no encontrás la funcionalidad que necesitás, solicitá más información a través del formulario de contacto",
+            "Packages": [
+                {
+                    "name": "Basic",
+                    "services": [
+                        {
+                            "name": "Producción general del evento",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Landing page ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Acreditación ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Streaming en vivo ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Gamificación e interacción ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Soporte técnico y asistencia personalizada",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Campaña en redes sociales ",
+                            "included": "False"
+                        },
+                        {
+                            "name": "Stands virtuales ",
+                            "included": "False"
+                        },
+                        {
+                            "name": "Mailing",
+                            "included": "False"
+                        },
+                        {
+                            "name": "Campaña de Google Ads ",
+                            "included": "False"
+                        }
+                    ]
+                },
+                {
+                    "name": "Plus",
+                    "services": [
+                        {
+                            "name": "Producción general del evento",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Landing page ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Acreditación ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Streaming en vivo ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Gamificación e interacción ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Soporte técnico y asistencia personalizada",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Campaña en redes sociales ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Stands virtuales ",
+                            "included": "False"
+                        },
+                        {
+                            "name": "Mailing",
+                            "included": "False"
+                        },
+                        {
+                            "name": "Campaña de Google Ads ",
+                            "included": "False"
+                        }
+                    ]
+                },
+                {
+                    "name": "Expert",
+                    "services": [
+                        {
+                            "name": "Producción general del evento",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Landing page ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Acreditación ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Streaming en vivo ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Gamificación e interacción ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Soporte técnico y asistencia personalizada",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Campaña en redes sociales ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Stands virtuales ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Mailing",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Campaña de Google Ads ",
+                            "included": "False"
+                        }
+                    ]
+                },
+                {
+                    "name": "Full experience",
+                    "services": [
+                        {
+                            "name": "Producción general del evento",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Landing page ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Acreditación ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Streaming en vivo ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Gamificación e interacción ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Soporte técnico y asistencia personalizada",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Campaña en redes sociales ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Stands virtuales ",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Mailing",
+                            "included": "True"
+                        },
+                        {
+                            "name": "Campaña de Google Ads ",
+                            "included": "True"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Contact",
+            "title": "Contactános! Estamos para ayudarte",
+            "text": "Completá el formulario y te responderemos dentro de las siguientes 24 hs. También podés enviar un email con tu consulta a info@ever.com o contactarnos a través de nuestras redes sociales.",
+            "formInputs": [
+                "Nombre",
+                "Empresa",
+                "Email",
+                "Teléfono",
+                "Mensaje"
+            ],
+            "button": "Enviar"
+        },
+        {
+            "name": "Footer",
+            "title": "",
+            "text": "E-ver es un servicio multifacético que proporciona una verdadera solución en la organización de eventos a distancia. Involucra tanto las necesidades técnicas como los requerimientos comunicacionales que necesitás para crear tu evento. ",
+            "formInputs": [
+                "Nombre",
+                "Empresa",
+                "Email",
+                "Teléfono",
+                "Mensaje"
+            ],
+            "button": "Enviar"
+        }
+    ]
+}
