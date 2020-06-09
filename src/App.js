@@ -13,7 +13,8 @@ const theme = {
     text: "#444444",
     gradient1: "rgba(255,46,121,1)",
     gradient2: "rgba(194,41,152,1)",
-    gradient: "linear-gradient(90deg, rgba(255,46,121,1) 0%, rgba(194,41,152,1) 100%)"
+    gradient: "linear-gradient(90deg, rgba(255,46,121,1) 0%, rgba(194,41,152,1) 100%)",
+    gradienthover: "linear-gradient(90deg, rgba(255,46,121,1) 5%, #494066 80%)"
   },
   fonts: {
     display: "'rotundabold', sans-serif",
@@ -35,10 +36,10 @@ const Container = styled.div`
   position: relative;
   margin: 0 auto;
   padding: 0;
-  width: 90%;
+  //width: 90%;
   min-height: 650px;
   max-height: 84vh;
-  padding-top: 16vh;
+  //padding-top: 16vh;
   background-image: url(${BackgroundImg});
   background-size: 65%;
   background-repeat: no-repeat;

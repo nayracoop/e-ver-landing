@@ -13,7 +13,12 @@ const Home = (props) => {
     return (
         <Wrapper>
             <Nav></Nav>
-            <Cover></Cover>
+            <Cover 
+            slideImage='pack'
+            text='Creamos experiencias a la medida de tus ideas'
+            textSize='150'
+            btnText='Ver más'
+            ></Cover>
             <About></About>
             <Services></Services>
             <Packages></Packages>
