@@ -15,7 +15,12 @@ const Home = (props) => {
     return (
         <Wrapper minHeight="100vh">
             <Nav></Nav>
-            <Cover></Cover>
+            <Cover
+                slideImage='pack'
+                text='Creamos experiencias a la medida de tus ideas'
+                textSize='150'
+                btnText='Ver más'
+            ></Cover>
             <About
                 sectionTitle={content.sections.about.title}
                 sectionText={content.sections.about.text} >

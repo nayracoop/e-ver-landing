@@ -1,14 +1,17 @@
 import React from 'react'
 import Wrapper from '../layout/Wrapper'
-import SectionContainer from '../layout/SectionContainer'
+import Slide from '../snippets/Slide'
 
 
 const Cover = (props) => {
     return (
-        <Wrapper minHeight="100vh">
-            <SectionContainer>
-
-            </SectionContainer>
+        <Wrapper>
+            <Slide 
+                slideImage = {props.slideImage}
+                text = {props.text}
+                textSize = {props.textSize}
+                btnText = {props.btnText}
+            />
         </Wrapper>
     )
 }
