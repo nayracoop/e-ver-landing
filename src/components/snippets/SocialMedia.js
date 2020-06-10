@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const SocialMedia = (props) => {
     return (
-        <div>SocialMedia</div>
+        <div></div>
     )
 }
 

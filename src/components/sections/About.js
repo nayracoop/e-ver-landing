@@ -8,7 +8,7 @@ import Image from '../snippets/Image'
 
 const About = (props) => {
     return (
-        <Wrapper>
+        <Wrapper minHeight="100vh">
             <SectionContainer>
                 <SectionTexts sectionTitle={props.sectionTitle} sectionText={props.sectionText} ></SectionTexts>
             </SectionContainer>

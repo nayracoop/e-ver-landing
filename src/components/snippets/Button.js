@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Button = (props) => {
     return (
-        <div> Button </div>
+        <div> </div>
     )
 }
 

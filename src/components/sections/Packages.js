@@ -7,10 +7,10 @@ import PackagesGrid from '../snippets/PackagesGrid'
 
 const Packages = (props) => {
     return (
-        <Wrapper>
+        <Wrapper minHeight="100vh">
             <SectionContainer>
                 <SectionTexts sectionTitle={props.sectionTitle} sectionText={props.sectionText} ></SectionTexts>
-                <PackagesGrid packagesData={props.packagesData}></PackagesGrid>
+                <PackagesGrid packagesList={props.packagesList}></PackagesGrid>
             </SectionContainer>
         </Wrapper>
     )

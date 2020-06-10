@@ -27,7 +27,7 @@
         "services": {
             "title": "¿Por qué elegir e-ver para realizar tu próximo evento a distancia?",
             "text": "Estas son algunas de las características que hacen de e-ver un producto único y confiable.",
-            "service": [
+            "servicesList": [
                 {
                     "name": "Landing page",
                     "text": " con la identidad de tu evento.",
@@ -142,10 +142,10 @@
         "packages": {
             "title": "Elegí uno de los Packs disponibles",
             "text": "Si no encontrás la funcionalidad que necesitás, solicitá más información a través del formulario de contacto",
-            "Packages": [
+            "packagesList": [
                 {
                     "name": "Basic",
-                    "services": [
+                    "servicesList": [
                         {
                             "name": "Producción general del evento",
                             "included": "True"

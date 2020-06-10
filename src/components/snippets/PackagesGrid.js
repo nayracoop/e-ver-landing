@@ -9,7 +9,15 @@ const GridContainer = styled.div`
 const PackagesGrid = (props) => {
     return (
         <GridContainer>
-            <PackageCard></PackageCard>
+            {props.packagesList.map((pack, key) => {
+                return (
+                    <PackageCard
+                        key={key}
+                        name={pack.name}
+                        list={pack.servicesList}
+                    ></PackageCard>
+                )
+            })}
         </GridContainer>
     )
 }

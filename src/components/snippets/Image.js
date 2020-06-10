@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Image = (props) => {
     return (
-        <div>Image</div>
+        <div></div>
     )
 }
 

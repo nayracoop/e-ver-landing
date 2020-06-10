@@ -7,10 +7,10 @@ import ServicesGrid from '../snippets/ServicesGrid'
 
 const Services = (props) => {
     return (
-        <Wrapper>
+        <Wrapper minHeight="100vh">
             <SectionContainer>
                 <SectionTexts sectionTitle={props.sectionTitle} sectionText={props.sectionText} ></SectionTexts>
-                <ServicesGrid></ServicesGrid>
+                <ServicesGrid services={props.services} ></ServicesGrid>
             </SectionContainer>
         </Wrapper>
     )

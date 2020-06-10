@@ -7,7 +7,7 @@ import ContactForm from '../snippets/ContactForm'
 
 const Contact = (props) => {
     return (
-        <Wrapper>
+        <Wrapper minHeight="50vh">
             <SectionContainer>
                 <SectionTexts sectionTitle={props.sectionTitle} sectionText={props.sectionText} ></SectionTexts>
                 <SocialMedia></SocialMedia>

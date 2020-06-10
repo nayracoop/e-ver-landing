@@ -5,7 +5,7 @@ import SectionContainer from '../layout/SectionContainer'
 
 const Cover = (props) => {
     return (
-        <Wrapper>
+        <Wrapper minHeight="100vh">
             <SectionContainer>
 
             </SectionContainer>
