@@ -39,5 +39,5 @@ jobs:
         password: ${{ secrets.SCP_PASSWORD }}
         port: ${{ secrets.SCP_PORT }}
         source: "build"
-        target: "/var/www/develop/landing.e-ever/"
+        target: "/var/www/develop/landing.e-ver/"
         strip_components: 1
