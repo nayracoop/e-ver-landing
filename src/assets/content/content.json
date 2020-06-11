@@ -139,187 +139,187 @@
                 }
             ]
         },
-        "packages": {
+        "plans": {
             "title": "Elegí uno de los Packs disponibles",
             "text": "Si no encontrás la funcionalidad que necesitás, solicitá más información a través del formulario de contacto",
-            "packagesList": [
+            "plansList": [
                 {
                     "name": "Basic",
                     "servicesList": [
                         {
                             "name": "Producción general del evento",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Landing page ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Acreditación ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Streaming en vivo ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Gamificación e interacción ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Soporte técnico y asistencia personalizada",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Campaña en redes sociales ",
-                            "included": "False"
+                            "included": false
                         },
                         {
                             "name": "Stands virtuales ",
-                            "included": "False"
+                            "included": false
                         },
                         {
                             "name": "Mailing",
-                            "included": "False"
+                            "included": false
                         },
                         {
                             "name": "Campaña de Google Ads ",
-                            "included": "False"
+                            "included": false
                         }
                     ]
                 },
                 {
                     "name": "Plus",
-                    "services": [
+                    "servicesList": [
                         {
                             "name": "Producción general del evento",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Landing page ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Acreditación ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Streaming en vivo ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Gamificación e interacción ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Soporte técnico y asistencia personalizada",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Campaña en redes sociales ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Stands virtuales ",
-                            "included": "False"
+                            "included": false
                         },
                         {
                             "name": "Mailing",
-                            "included": "False"
+                            "included": false
                         },
                         {
                             "name": "Campaña de Google Ads ",
-                            "included": "False"
+                            "included": false
                         }
                     ]
                 },
                 {
                     "name": "Expert",
-                    "services": [
+                    "servicesList": [
                         {
                             "name": "Producción general del evento",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Landing page ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Acreditación ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Streaming en vivo ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Gamificación e interacción ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Soporte técnico y asistencia personalizada",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Campaña en redes sociales ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Stands virtuales ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Mailing",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Campaña de Google Ads ",
-                            "included": "False"
+                            "included": false
                         }
                     ]
                 },
                 {
                     "name": "Full experience",
-                    "services": [
+                    "servicesList": [
                         {
                             "name": "Producción general del evento",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Landing page ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Acreditación ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Streaming en vivo ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Gamificación e interacción ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Soporte técnico y asistencia personalizada",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Campaña en redes sociales ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Stands virtuales ",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Mailing",
-                            "included": "True"
+                            "included": true
                         },
                         {
                             "name": "Campaña de Google Ads ",
-                            "included": "True"
+                            "included": true
                         }
                     ]
                 }

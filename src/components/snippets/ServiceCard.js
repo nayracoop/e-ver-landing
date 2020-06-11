@@ -3,6 +3,14 @@ import styled from 'styled-components'
 import Wrapper from '../layout/Wrapper'
 import Image from '../snippets/Image'
 
+const ServicesWrapper = styled.li`
+    padding: 15px;
+    margin: 15px;
+    background-color: pink;
+    border-radius: 20px;
+`
+
+
 const Title = styled.h2`
 
 `
@@ -21,7 +29,7 @@ const Icon = styled(Image)`
 
 const ServiceCard = (props) => {
     return (
-        <Wrapper>
+        <ServicesWrapper>
             <Icon src="" ></Icon>
             <Wrapper>
                 <Title>{props.name}</Title>
@@ -34,7 +42,7 @@ const ServiceCard = (props) => {
                     })}
                 </ul>
             </Wrapper>
-        </Wrapper>
+        </ServicesWrapper>
     )
 }
 

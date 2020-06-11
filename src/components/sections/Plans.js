@@ -2,18 +2,18 @@ import React from 'react'
 import Wrapper from '../layout/Wrapper'
 import SectionContainer from '../layout/SectionContainer'
 import SectionTexts from '../snippets/SectionTexts'
-import PackagesGrid from '../snippets/PackagesGrid'
+import PlansGrid from '../snippets/PlansGrid'
 
 
-const Packages = (props) => {
+const Plans = (props) => {
     return (
         <Wrapper minHeight="100vh">
             <SectionContainer>
                 <SectionTexts sectionTitle={props.sectionTitle} sectionText={props.sectionText} ></SectionTexts>
-                <PackagesGrid packagesList={props.packagesList}></PackagesGrid>
+                <PlansGrid plansList={props.plansList}></PlansGrid>
             </SectionContainer>
         </Wrapper>
     )
 }
 
-export default Packages
+export default Plans
