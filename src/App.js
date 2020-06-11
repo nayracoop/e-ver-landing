@@ -8,7 +8,6 @@ import Home from './components/templates/Home'
 
 //import BackgroundImg from './assets/img/bg.svg'
 
-
 const theme = {
   colors: {
     primary: "#494066",
