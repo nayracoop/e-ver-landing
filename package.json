@@ -1,6 +1,6 @@
 {
   "name": "e-ver-marketing-landing",
-  "homepage": "https://develop.nayra.coop/ever-landing/",  
+  "homepage": "https://develop.nayra.coop/ever-landing/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
