@@ -19,13 +19,13 @@ const SlideContainer = styled.div`
         min-height: 650px;
         flex-direction: column;
         justify-content: flex-start;
+        padding-top: 105px;
     }
     @media (min-width: ${(props) => props.theme.pageWidth.l}px) and (max-width: ${(props) => props.theme.pageWidth.xxl}px) {
         min-height: 850px;
     }
 `
 const SlideImgContainer = styled.div`
-    //height: 45%;
     flex-basis: 50%;
     padding: 0 35px;
     margin-bottom: 30vh;
@@ -37,7 +37,7 @@ const SlideImgContainer = styled.div`
 `
 const SlideImg = styled.img`
     height: 100%;
-    max-height: 325px;
+    max-height: 400px;
     width: auto;
     max-width: 100%;
     @media (max-width: ${(props) => props.theme.pageWidth.l}px) {

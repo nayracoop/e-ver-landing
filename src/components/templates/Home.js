@@ -7,7 +7,6 @@ import Packages from '../sections/Packages'
 import Contact from '../sections/Contact'
 import Nav from '../sections/Navbar'
 import Footer from '../sections/Footer'
-
 import content from '../../assets/content/content.json'
 
 
@@ -15,7 +14,9 @@ const Home = (props) => {
     console.log(content)
     return (
         <Wrapper>
-            <Nav></Nav>
+            <Nav
+                btnText='Contratá e-ver'
+            ></Nav>
             <Cover
                 slideImage='pack'
                 text='Creamos experiencias a la medida de tus ideas'

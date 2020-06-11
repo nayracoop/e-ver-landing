@@ -21,7 +21,7 @@ const BtnLink = styled(Link)`
 
 const Button = (props) => {
     return (
-        <BtnLink>{props.btnText}</BtnLink>
+        <BtnLink className={props.className}>{props.btnText}</BtnLink>
     )
 }
 
