@@ -1,9 +1,156 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from "react-router-dom"
+import { ReactComponent as Logo } from '../../assets/img/logo.svg'
+import Button from '../snippets/Button'
 
+const NavbarContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 99;
+    padding: 15px;
+    box-shadow: 1px 1px 3px 1px rgba(128,128,128,.1);
+`
+const Brand = styled(Link)`
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    svg {
+        display: block;
+    }
+`
+
+const NavLink = styled(Link)`
+    font-family: ${(props) => props.theme.fonts.title};
+    color: ${(props) => props.theme.colors.primary};
+    text-decoration: none;
+    padding: 25px 5px;
+    display: block;
+`
+
+const BrandText = styled.h1`
+    color: red;
+    font-size: .75rem;
+    position: absolute;
+    left: -9999px;
+`
+
+const Nav = styled.ul`
+    display: flex;    
+    align-items: center;
+    &.show {
+        transform: translateX(0);
+    }
+    }
+    @media (max-width: ${(props) => props.theme.pageWidth.l}px) {
+        position: absolute;
+        left: 0;
+        height: 90vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        background: #fff;
+        transform: translateX(-100%);
+        transition: .3s ease-in-out;
+        border-top: 1px solid magenta;
+        padding-top: 25px;
+    }
+`
+
+const NavItem = styled.li`
+    margin: 0px 20px;
+    a {
+        font-size: 1.125rem;
+    }
+    @media (max-width: ${(props) => props.theme.pageWidth.l}px) {
+        margin: 15px 15px;
+    }
+`
+
+const Toggler = styled.button`
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: transparent;
+    height: 50px;
+    width: 55px;    
+    text-transform: uppercase;
+    font-family: ${(props) => props.theme.fonts.title};
+    cursor: pointer;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzNSAxNy40IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzNSAxNy40OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6IzQ5NDA2Njt9PC9zdHlsZT48ZyBpZD0iQ2FwYV8yXzFfIj48ZyBpZD0iQ2FwYV8xLTIiPjxyZWN0IGNsYXNzPSJzdDAiIHdpZHRoPSIzNSIgaGVpZ2h0PSIzLjUiLz48cmVjdCB4PSI2LjEiIHk9IjYuOSIgY2xhc3M9InN0MCIgd2lkdGg9IjI4LjkiIGhlaWdodD0iMy41Ii8+PHJlY3QgeD0iMTMuNCIgeT0iMTMuOSIgY2xhc3M9InN0MCIgd2lkdGg9IjIxLjUiIGhlaWdodD0iMy41Ii8+PC9nPjwvZz48L3N2Zz4=); !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    outline: none !important;
+    &.open {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzNSAxNy40IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzNSAxNy40OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6IzQ5NDA2Njt9PC9zdHlsZT48cmVjdCB4PSI2LjciIHk9IjYuOSIgdHJhbnNmb3JtPSJtYXRyaXgoMC42OTY0IC0wLjcxNzcgMC43MTc3IDAuNjk2NCAtMC45Mzg4IDE1LjE5MDkpIiBjbGFzcz0ic3QwIiB3aWR0aD0iMjEuNSIgaGVpZ2h0PSIzLjUiLz48cmVjdCB4PSIxNS43IiB5PSItMi4xIiB0cmFuc2Zvcm09Im1hdHJpeCgwLjY5NjQgLTAuNzE3NyAwLjcxNzcgMC42OTY0IC0wLjkzODggMTUuMTkwOSkiIGNsYXNzPSJzdDAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMjEuNSIvPjwvc3ZnPg==);
+    }
+    &:active {
+        background-color: transparent;
+    }
+    &:focus {
+        background-color: transparent;
+    }
+    &::-moz-focus-inner {
+        border: none !important;
+        outline: none !important;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    @media (min-width: ${(props) => props.theme.pageWidth.l}px) {
+        display: none;
+    }
+`
+const CallToAction = styled(Button)`
+    display: flex;
+`
 const Navbar = (props) => {
+    const showMenu = () => {
+        const menu = document.querySelector('.menu')
+        const toggler = document.querySelector('.toggler')
+        const bodyTag = document.body
+        menu.classList.toggle('show')
+        toggler.classList.toggle('open')
+        bodyTag.classList.toggle('opened-menu')
+    }
     return (
-        <div>Navbar</div>
+        <NavbarContainer>
+            <Brand>
+                <BrandText>e-ver</BrandText>
+                <Logo height="28"/>
+            </Brand>
+            <Toggler className="toggler" onClick={showMenu}></Toggler>
+            <Nav className="menu">
+                <NavItem>
+                    <NavLink to='/#que-es-ever'>¿Qué es e-ver?</NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink to='/#caracteristicas'>Características</NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink to='/#planes'>Planes</NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink to='/#contacto'>Contacto</NavLink>
+                </NavItem>
+                <NavItem>
+                    <CallToAction btnText={props.btnText} to='/#'></CallToAction>
+                </NavItem>
+            </Nav>
+        </NavbarContainer>
     )
 }
 
