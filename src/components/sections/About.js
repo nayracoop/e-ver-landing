@@ -2,7 +2,7 @@ import React from 'react'
 import Wrapper from '../layout/Wrapper'
 import SectionContainer from '../layout/SectionContainer'
 import SectionTexts from '../snippets/SectionTexts'
-import Image from '../snippets/Image'
+// import Image from '../snippets/Image'
 
 
 
