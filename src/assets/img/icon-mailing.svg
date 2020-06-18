@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 118.6 118.1" style="enable-background:new 0 0 118.6 118.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#494066;}
+	.st2{fill:url(#SVGID_1_);}
+	.st3{fill:none;}
+</style>
+<g>
+	<rect x="23.4" y="28" class="st0" width="71.8" height="52.1"/>
+	<path class="st1" d="M96.7,81.5H21.9v-55h74.9L96.7,81.5L96.7,81.5z M25,78.5h68.8V29.5H25V78.5z"/>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="25.9979" y1="1843.3101" x2="92.6069" y2="1843.3101" gradientTransform="matrix(1 0 0 1 0 -1800.1102)">
+		<stop  offset="0" style="stop-color:#FF2E79"/>
+		<stop  offset="1" style="stop-color:#C22998"/>
+	</linearGradient>
+	<polygon class="st2" points="26,28 59.5,58.4 92.6,28 	"/>
+	<path class="st1" d="M59.5,60.5L22,26.5h74.5L59.5,60.5z M30,29.5l29.5,26.7l29.2-26.7C88.7,29.5,30,29.5,30,29.5z"/>
+	<line class="st3" x1="71.3" y1="47.4" x2="95.3" y2="71.4"/>
+	<rect x="81.8" y="42.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -17.5843 76.3412)" class="st1" width="3" height="33.9"/>
+	<line class="st3" x1="47.4" y1="47.4" x2="23.4" y2="71.4"/>
+	<rect x="18.6" y="58" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -31.6888 42.5626)" class="st1" width="33.9" height="3"/>
+</g>
+</svg>

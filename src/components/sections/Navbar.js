@@ -5,23 +5,43 @@ import { ReactComponent as Logo } from '../../assets/img/logo.svg'
 import Button from '../snippets/Button'
 
 const NavbarContainer = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background: #fff;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    margin: auto;
     z-index: 99;
     padding: 15px;
     box-shadow: 1px 1px 3px 1px rgba(128,128,128,.1);
 `
+const NavBarWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 95%;
+    
+    @media(min-width: ${props => props.theme.pageWidth.s}px){
+        max-width: ${props => props.theme.pageWidth.m}px;
+    }
+
+    @media(min-width: ${props => props.theme.pageWidth.m}px){
+        max-width: ${props => props.theme.pageWidth.l}px;
+    }
+
+    @media(min-width: ${props => props.theme.pageWidth.l}px){
+        max-width: ${props => props.theme.pageWidth.xl}px;
+    }
+
+    @media(min-width: ${props => props.theme.pageWidth.xl}px){
+        max-width: ${props => props.theme.pageWidth.xxl}px;
+    }
+`
+
 const Brand = styled(Link)`
     display: flex;
     align-items: center;
-    padding: 5px 10px;
+    padding: 5px 15px;
     svg {
         display: block;
     }
@@ -47,7 +67,6 @@ const Nav = styled.ul`
     align-items: center;
     &.show {
         transform: translateX(0);
-    }
     }
     @media (max-width: ${(props) => props.theme.pageWidth.l}px) {
         position: absolute;
@@ -128,28 +147,30 @@ const Navbar = (props) => {
     }
     return (
         <NavbarContainer>
-            <Brand>
-                <BrandText>e-ver</BrandText>
-                <Logo height="28"/>
-            </Brand>
-            <Toggler className="toggler" onClick={showMenu}></Toggler>
-            <Nav className="menu">
-                <NavItem>
-                    <NavLink to='/#que-es-ever'>¿Qué es e-ver?</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink to='/#caracteristicas'>Características</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink to='/#planes'>Planes</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink to='/#contacto'>Contacto</NavLink>
-                </NavItem>
-                <NavItem>
-                    <CallToAction btnText={props.btnText} to='/#'></CallToAction>
-                </NavItem>
-            </Nav>
+            <NavBarWrapper>
+                <Brand>
+                    <BrandText>e-ver</BrandText>
+                    <Logo height="28"/>
+                </Brand>
+                <Toggler className="toggler" onClick={showMenu}></Toggler>
+                <Nav className="menu">
+                    <NavItem>
+                        <NavLink to='/#que-es-ever'>¿Qué es e-ver?</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink to='/#caracteristicas'>Características</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink to='/#planes'>Planes</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink to='/#contacto'>Contacto</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <CallToAction btnText={props.btnText} to='/#'></CallToAction>
+                    </NavItem>
+                </Nav>
+            </NavBarWrapper>
         </NavbarContainer>
     )
 }

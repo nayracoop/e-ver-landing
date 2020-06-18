@@ -30,7 +30,8 @@
             "servicesList": [
                 {
                     "name": "Landing page",
-                    "text": " con la identidad de tu evento.",
+                    "lead": "Con la identidad de tu evento.",
+                    "icon": "icon-landing",
                     "list": [
                         "Presentación del evento (SLIDE)",
                         "Cuenta regresiva",
@@ -45,7 +46,8 @@
                 },
                 {
                     "name": "Acreditación",
-                    "text": "Para llegar a todos tus participantes",
+                    "lead": "Para llegar a todos tus participantes",
+                    "icon": "icon-credential",
                     "list": [
                         "Usuarios y permisos",
                         "Inscripciones al evento"
@@ -53,7 +55,8 @@
                 },
                 {
                     "name": "Streaming en vivo",
-                    "text": " Integración con la plataforma que elijas",
+                    "lead": "Integración con la plataforma que elijas",
+                    "icon": "icon-streaming",
                     "list": [
                         "Integración con plataformas de streaming de uno o varios panelistas (ej. zoom, livestream)",
                         "Integración con streaming en vivo en redes sociales (Ej. Youtube live, Facebook live)",
@@ -63,7 +66,8 @@
                 },
                 {
                     "name": "Gamificación e interacción",
-                    "text": "Creamos experiencias interactivas. ",
+                    "lead": "Creamos experiencias interactivas. ",
+                    "icon": "icon-gamification",
                     "list": [
                         " Sistema de preguntas/respuestas interactivo entre asistentes y orador",
                         " Calendario de actividades",
@@ -78,7 +82,8 @@
                 },
                 {
                     "name": "Campaña en redes sociales",
-                    "text": "Para hacerle saber al mundo todo lo que sucedió, sucede y sucederá en tu evento.",
+                    "lead": "Para hacerle saber al mundo todo lo que sucedió, sucede y sucederá en tu evento.",
+                    "icon": "icon-campaign",
                     "list": [
                         "Generación de contenido para RRSS (FB+Ins+LKD+TW)* (hasta 12 publicaciones) *El servicio no incluye administración de redes sociales",
                         "Redacción y planificación de estrategia",
@@ -92,7 +97,8 @@
                 },
                 {
                     "name": "Producción general del evento",
-                    "text": "Para que no tengas que preocuparte por nada, nos encargamos de todo, de principio a fin.",
+                    "lead": "Para que no tengas que preocuparte por nada, nos encargamos de todo, de principio a fin.",
+                    "icon": "icon-production",
                     "list": [
                         "Relevamiento de materiales comunicacionales necesarios para el evento",
                         "Organización de la información",
@@ -102,23 +108,24 @@
                     ]
                 },
                 {
-                    "name": "Piezas de comunicación",
-                    "text": "Campañas de Google, Facebook e Instagram Ads: para llegar a todo tu público potencial.",
+                    "name": "Mailing",
+                    "lead": "Para que todos tus participantes estén al tanto de los últimos sucesos",
+                    "icon": "icon-mailing",
                     "list": [
-                        "Red 360: Campaña en las distintas plataformas de Google ",
-                        "Generación e implementación de campaña",
-                        "Control y actualización",
-                        "Creación de anuncios sobre la base de palabras clave y segmento de público a definir"
+                        "Armado de gacetilla de prensa - (3 gacetillas, previa, durante y posterior al evento)",
+                        "Diseño y redacción de gacetilla de prensa - de todas las actividades estratégicas de tu evento."
                     ]
                 },
                 {
                     "name": "Piezas de comunicación",
-                    "text": " diseño, comunicación y creatividad al servicio de tu evento",
+                    "lead": "Diseño, comunicación y creatividad al servicio de tu evento",
+                    "icon": "icon-communication",
                     "list": []
                 },
                 {
                     "name": "Campañas de Google, Facebook e Instagram Ads:",
-                    "text": "para llegar a todo tu público potencial.",
+                    "lead": "Para llegar a todo tu público potencial.",
+                    "icon": "icon-social",
                     "list": [
                         "Red 360: Campaña en las distintas plataformas de Google ",
                         "Generación e implementación de campaña",
@@ -128,7 +135,8 @@
                 },
                 {
                     "name": "Soporte técnico y asistencia personalizada",
-                    "text": "Te ofrecemos feedback permanente. Desde que contratás nuestros servicios hasta que tu evento finaliza, te acompañamos y nos ocupamos de cada detalle. ",
+                    "lead": "Te ofrecemos feedback permanente. Desde que contratás nuestros servicios hasta que tu evento finaliza, te acompañamos y nos ocupamos de cada detalle. ",
+                    "icon": "icon-support",
                     "list": [
                         "Soporte técnico durante el evento",
                         "Integración con Analytics",
@@ -140,7 +148,7 @@
             ]
         },
         "plans": {
-            "title": "Elegí uno de los Packs disponibles",
+            "title": "Elegí uno de los planes disponibles",
             "text": "Si no encontrás la funcionalidad que necesitás, solicitá más información a través del formulario de contacto",
             "plansList": [
                 {
@@ -326,7 +334,7 @@
             ]
         },
         "contact": {
-            "title": "Contactános! Estamos para ayudarte",
+            "title": "¡Contactanos! Estamos para ayudarte",
             "text": "Completá el formulario y te responderemos dentro de las siguientes 24 hs. También podés enviar un email con tu consulta a info@ever.com o contactarnos a través de nuestras redes sociales.",
             "formInputs": [
                 "Nombre",
