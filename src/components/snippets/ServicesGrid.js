@@ -6,7 +6,7 @@ const GridContainer = styled.ul`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    background-colore: pink;
+    background-color: #fff;
     @media(max-width: ${props => props.theme.pageWidth.l}px){
         grid-template-columns: 1fr 1fr 1fr;
     }

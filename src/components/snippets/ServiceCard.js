@@ -8,7 +8,7 @@ const ServicesWrapper = styled.li`
     margin: 15px;
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 1px 1px 15px rgba(20, 20, 20, .16);
+    box-shadow: ${ (props) => props.theme.colors.shadow}; 
     display: flex;
     flex-direction: column;
     @media (max-width: ${(props) => props.theme.pageWidth.m}px) {

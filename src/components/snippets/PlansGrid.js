@@ -17,7 +17,9 @@ const PlansGrid = (props) => {
                     <PlanCard
                         key={key}
                         name={plan.name}
+                        icon={plan.icon}
                         list={plan.servicesList}
+                        btnText={props.btnText}
                     ></PlanCard>
                 )
             })}

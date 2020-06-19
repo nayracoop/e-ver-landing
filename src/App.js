@@ -16,7 +16,8 @@ const theme = {
     gradient1: "rgba(255,46,121,1)",
     gradient2: "rgba(194,41,152,1)",
     gradient: "linear-gradient(90deg, rgba(255,46,121,1) 0%, rgba(194,41,152,1) 100%)",
-    gradienthover: "linear-gradient(90deg, rgba(255,46,121,1) 5%, #494066 80%)"
+    gradienthover: "linear-gradient(90deg, rgba(255,46,121,1) 5%, #494066 80%)",
+    shadow: "1px 1px 15px rgba(20,20,20,.16)"
   },
   fonts: {
     display: "'rotundabold', sans-serif",

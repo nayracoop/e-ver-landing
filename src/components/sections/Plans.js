@@ -10,7 +10,7 @@ const Plans = (props) => {
         <Wrapper minHeight="100vh">
             <SectionContainer>
                 <SectionTexts sectionTitle={props.sectionTitle} sectionText={props.sectionText} ></SectionTexts>
-                <PlansGrid plansList={props.plansList}></PlansGrid>
+                <PlansGrid plansList={props.plansList} btnText={props.btnText}></PlansGrid>
             </SectionContainer>
         </Wrapper>
     )

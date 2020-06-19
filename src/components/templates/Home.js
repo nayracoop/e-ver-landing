@@ -34,7 +34,8 @@ const Home = (props) => {
             <Plans
                 sectionTitle={content.sections.plans.title}
                 sectionText={content.sections.plans.text}
-                plansList={content.sections.plans.plansList}>
+                plansList={content.sections.plans.plansList}
+                btnText='Cotizar'>
             </Plans>
             <Contact
                 sectionTitle={content.sections.contact.title}
