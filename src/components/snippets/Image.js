@@ -3,7 +3,7 @@ import React from 'react'
 
 const Image = (props) => {
     return (
-        <div></div>
+        <img className={props.className} height={props.imgHeight} src={require('../../assets/img/' + props.imgSrc)} />
     )
 }
 

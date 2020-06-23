@@ -351,6 +351,11 @@
         },
         "footer": {
             "title": "",
+            "imgHeight": "30",
+            "licenceImgSrc": "licence.png",
+            "imgSrc": "footer-logo.svg",
+            "licenceImgHeight": "22",
+            "licenceText": "El contenido de este sitio se distribuye bajo una licencia Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).",
             "text": "E-ver es un servicio multifacético que proporciona una verdadera solución en la organización de eventos a distancia. Involucra tanto las necesidades técnicas como los requerimientos comunicacionales que necesitás para crear tu evento. ",
             "formInputs": [
                 "Nombre",

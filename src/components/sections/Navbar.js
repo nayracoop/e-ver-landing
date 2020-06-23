@@ -56,13 +56,14 @@ const NavLink = styled(Link)`
 `
 
 const BrandText = styled.h1`
-    color: red;
     font-size: .75rem;
     position: absolute;
     left: -9999px;
 `
+const Nav = styled.nav`
+`
 
-const Nav = styled.ul`
+const Menu = styled.ul`
     display: flex;    
     align-items: center;
     &.show {
@@ -81,7 +82,7 @@ const Nav = styled.ul`
         transform: translateX(-100%);
         transition: .3s ease-in-out;
         border-top: 1px solid magenta;
-        padding-top: 25px;
+        // padding-top: 25px;
     }
 `
 
@@ -96,20 +97,21 @@ const NavItem = styled.li`
 `
 
 const Toggler = styled.button`
-    background: transparent;
+    height: 50px;
+    width: 45px;    
+    margin-left: auto;
+    font-family: ${(props) => props.theme.fonts.title};
+    color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none !important;
     border: none;
     box-shadow: none;
-    color: transparent;
-    height: 50px;
-    width: 55px;    
-    text-transform: uppercase;
-    font-family: ${(props) => props.theme.fonts.title};
-    cursor: pointer;
+    background: transparent;
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzNSAxNy40IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzNSAxNy40OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6IzQ5NDA2Njt9PC9zdHlsZT48ZyBpZD0iQ2FwYV8yXzFfIj48ZyBpZD0iQ2FwYV8xLTIiPjxyZWN0IGNsYXNzPSJzdDAiIHdpZHRoPSIzNSIgaGVpZ2h0PSIzLjUiLz48cmVjdCB4PSI2LjEiIHk9IjYuOSIgY2xhc3M9InN0MCIgd2lkdGg9IjI4LjkiIGhlaWdodD0iMy41Ii8+PHJlY3QgeD0iMTMuNCIgeT0iMTMuOSIgY2xhc3M9InN0MCIgd2lkdGg9IjIxLjUiIGhlaWdodD0iMy41Ii8+PC9nPjwvZz48L3N2Zz4=); !important;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    outline: none !important;
     &.open {
         background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzNSAxNy40IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzNSAxNy40OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6IzQ5NDA2Njt9PC9zdHlsZT48cmVjdCB4PSI2LjciIHk9IjYuOSIgdHJhbnNmb3JtPSJtYXRyaXgoMC42OTY0IC0wLjcxNzcgMC43MTc3IDAuNjk2NCAtMC45Mzg4IDE1LjE5MDkpIiBjbGFzcz0ic3QwIiB3aWR0aD0iMjEuNSIgaGVpZ2h0PSIzLjUiLz48cmVjdCB4PSIxNS43IiB5PSItMi4xIiB0cmFuc2Zvcm09Im1hdHJpeCgwLjY5NjQgLTAuNzE3NyAwLjcxNzcgMC42OTY0IC0wLjkzODggMTUuMTkwOSkiIGNsYXNzPSJzdDAiIHdpZHRoPSIzLjUiIGhlaWdodD0iMjEuNSIvPjwvc3ZnPg==);
     }
@@ -153,22 +155,24 @@ const Navbar = (props) => {
                     <Logo height="28"/>
                 </Brand>
                 <Toggler className="toggler" onClick={showMenu}></Toggler>
-                <Nav className="menu">
-                    <NavItem>
-                        <NavLink to='/#que-es-ever'>¿Qué es e-ver?</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink to='/#caracteristicas'>Características</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink to='/#planes'>Planes</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink to='/#contacto'>Contacto</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <CallToAction btnText={props.btnText} to='/#'></CallToAction>
-                    </NavItem>
+                <Nav>
+                    <Menu className="menu">
+                        <NavItem>
+                            <NavLink to='/#que-es-ever'>¿Qué es e-ver?</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink to='/#caracteristicas'>Características</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink to='/#planes'>Planes</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink to='/#contacto'>Contacto</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <CallToAction btnText={props.btnText} to='/#'></CallToAction>
+                        </NavItem>
+                    </Menu>
                 </Nav>
             </NavBarWrapper>
         </NavbarContainer>

@@ -42,8 +42,13 @@ const Home = (props) => {
                 sectionText={content.sections.contact.text}>
             </Contact>
             <Footer
-                sectionTitle={content.sections.contact.title}
-                sectionText={content.sections.contact.text}>
+                text={content.sections.footer.text}
+                imgHeight={content.sections.footer.imgHeight}
+                imgSrc={content.sections.footer.imgSrc}
+                licenceImgSrc={content.sections.footer.licenceImgSrc}
+                licenceImgHeight={content.sections.footer.licenceImgHeight}
+                licenceText={content.sections.footer.licenceText}
+                >
             </Footer>
         </Wrapper>
     )
