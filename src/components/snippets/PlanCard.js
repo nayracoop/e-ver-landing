@@ -5,7 +5,7 @@ import Button from '../snippets/Button'
 import Bg from '../../assets/img/bg-plancard.svg'
 
 const PlansWrapper = styled.li`
-    padding: 25px 65px 40px 65px;
+    padding: 0px 65px 40px 65px;
     margin: 15px;
     background-image: url(${Bg});
     background-position: top center;
@@ -73,7 +73,7 @@ const PlanCard = (props) => {
     return (
         <PlansWrapper >            
             <Wrapper>
-                <Icon height="100" src={require('../../assets/img/' + props.icon + '.svg')} ></Icon>
+                <Icon height="130" src={require('../../assets/img/' + props.icon + '.svg')} ></Icon>
                 <Title>{props.name}</Title>
                 <ServicesList>
                     {

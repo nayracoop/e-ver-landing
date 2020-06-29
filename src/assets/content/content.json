@@ -153,7 +153,7 @@
             "plansList": [
                 {
                     "name": "Basic",
-                    "icon": "icon-gamification",
+                    "icon": "plan-basic-icon",
                     "servicesList": [
                         {
                             "name": "Producción general del evento",
@@ -199,7 +199,7 @@
                 },
                 {
                     "name": "Plus",
-                    "icon": "icon-gamification",
+                    "icon": "plan-plus-icon",
                     "servicesList": [
                         {
                             "name": "Producción general del evento",
@@ -245,7 +245,7 @@
                 },
                 {
                     "name": "Expert",
-                    "icon": "icon-gamification",
+                    "icon": "plan-expert-icon",
                     "servicesList": [
                         {
                             "name": "Producción general del evento",
@@ -291,7 +291,7 @@
                 },
                 {
                     "name": "Full experience",
-                    "icon": "icon-gamification",
+                    "icon": "plan-full-icon",
                     "servicesList": [
                         {
                             "name": "Producción general del evento",

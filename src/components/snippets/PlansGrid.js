@@ -5,12 +5,15 @@ import PlanCard from './PlanCard'
 const GridContainer = styled.ul`
     display: grid;
     grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
     @media(max-width: ${props => props.theme.pageWidth.l}px){
-        grid-template-columns: 1fr 1fr 1fr 1FR;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-
     @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: ${(props) => props.theme.pageWidth.s}px) {
         grid-template-columns: 1fr;
     }
 `
