@@ -20,9 +20,10 @@
             ]
         },
         "about": {
-            "title": "¿Qué es E-ver? ",
-            "text": "E-ver es  un servicio multifacético que proporciona una verdadera solución en la organización de eventos a distancia. Involucra tanto las necesidades técnicas como los requerimientos comunicacionales que necesitás para crear tu evento. ",
-            "image": ""
+            "title": "¿Qué es e-ver? ",
+            "text": "E-ver es un servicio multifacético que proporciona una verdadera solución en la organización de eventos a distancia. Involucra tanto las necesidades técnicas como los requerimientos comunicacionales que necesitás para crear tu evento. ",
+            "imgSrc": "e-ver-print.svg",
+            "imgHeight": "450"
         },
         "services": {
             "title": "¿Por qué elegir e-ver para realizar tu próximo evento a distancia?",
