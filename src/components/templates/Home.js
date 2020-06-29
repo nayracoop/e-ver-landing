@@ -24,6 +24,8 @@ const Home = (props) => {
                 btnText='Ver más'
             ></Cover>
             <About
+                imgHeight={content.sections.about.imgHeight}
+                imgSrc={content.sections.about.imgSrc}
                 sectionTitle={content.sections.about.title}
                 sectionText={content.sections.about.text} >
             </About>
