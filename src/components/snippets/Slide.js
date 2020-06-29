@@ -46,7 +46,7 @@ const SlideImg = styled.img`
         margin-right: auto;
     }
 `
-const SlideInfo = styled.div `
+const SlideInfo = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -100,11 +100,11 @@ const Slide = (props) => {
     return (
         <SlideContainer>
             <SlideImgContainer>
-                <SlideImg height="100" src={require ('../../assets/img/'+ props.slideImage + '.svg')} />
+                <SlideImg height="100" src={require('../../assets/img/' + props.slideImage + '.svg')} />
             </SlideImgContainer>
             <SlideInfo>
                 <SlideText textSize={props.textSize}>{props.text}</SlideText>
-                <Button btnText={props.btnText}/>
+                <Button btnText={props.btnText} />
             </SlideInfo>
         </SlideContainer>
     )

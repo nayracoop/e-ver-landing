@@ -17,6 +17,7 @@ const Home = (props) => {
                 btnText='Contratá e-ver'
             ></Nav>
             <Cover
+                slides={content.sections.cover.slides}
                 slideImage='pack'
                 text='Creamos experiencias a la medida de tus ideas'
                 textSize='150'
@@ -48,7 +49,7 @@ const Home = (props) => {
                 licenceImgSrc={content.sections.footer.licenceImgSrc}
                 licenceImgHeight={content.sections.footer.licenceImgHeight}
                 licenceText={content.sections.footer.licenceText}
-                >
+            >
             </Footer>
         </Wrapper>
     )

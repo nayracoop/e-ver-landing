@@ -1,18 +1,37 @@
 import React from 'react'
-import Wrapper from '../layout/Wrapper'
+import styled from 'styled-components'
 import Slide from '../snippets/Slide'
 
+const SliderContainer = styled.div`
+    width: 100vw;
+    height:100vh;
+    overflow: hidden;
+    display: flex;
+`
+const SlideContainer = styled.div`
+    flex: 1;
+    min-width:100%;
+`
 
 const Cover = (props) => {
     return (
-        <Wrapper>
-            <Slide 
-                slideImage = {props.slideImage}
-                text = {props.text}
-                textSize = {props.textSize}
-                btnText = {props.btnText}
-            />
-        </Wrapper>
+        <SliderContainer>
+            {props.slides.map((slide, key) => {
+                console.log(slide)
+                return (
+                    <SlideContainer>
+                        < Slide
+                            key={key}
+                            slideImage={slide.image}
+                            text={slide.text}
+                            textSize={props.textSize}
+                            btnText={slide.buttonText} >
+                        </Slide>
+                    </SlideContainer>
+                )
+            })
+            }
+        </SliderContainer>
     )
 }
 
