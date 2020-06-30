@@ -24,15 +24,15 @@
             "slug": "que-es-ever",
             "navText": "¿Qué es e-ver?",
             "title": "# ¿Qué es **e-ver**? ",
-            "text": "E-ver es un servicio multifacético que proporciona una verdadera solución en la organización de eventos a distancia. Involucra tanto las necesidades técnicas como los requerimientos comunicacionales que necesitás para crear tu evento. ",
+            "text": "_E-ver_ es un servicio multifacético que proporciona una verdadera solución en la organización de _eventos a distancia_. Involucra tanto las necesidades técnicas como los requerimientos comunicacionales que necesitás para crear tu evento. ",
             "imgSrc": "e-ver-print.svg",
             "imgHeight": "450"
         },
         "services": {
             "slug": "servicios",
             "navText": "Servicios",
-            "title": "# ¿Por qué elegir e-ver para realizar tu próximo evento a distancia?",
-            "text": "Estas son algunas de las características que hacen de e-ver un producto único y confiable.",
+            "title": "# ¿Por qué elegir _e-ver_ para realizar tu próximo _evento a distancia_?",
+            "text": "Estas son algunas de las características que hacen de _e-ver_ un producto único y confiable.",
             "servicesList": [
                 {
                     "name": "Landing page",
@@ -156,8 +156,8 @@
         "plans": {
             "slug": "plans",
             "navText": "Planes",
-            "title": "# Elegí uno de los planes disponibles",
-            "text": "Si no encontrás la funcionalidad que necesitás, solicitá más información a través del formulario de contacto",
+            "title": "# Elegí uno de los _planes disponibles_",
+            "text": "Si no encontrás la funcionalidad que necesitás, solicitá más información a través del _formulario de contacto_",
             "plansList": [
                 {
                     "name": "Basic",
@@ -348,8 +348,8 @@
         "contact": {
             "slug": "contacto",
             "navText": "Contacto",
-            "title": "# ¡Contactanos! Estamos para ayudarte",
-            "text": "Completá el formulario y te responderemos dentro de las siguientes 24 hs. También podés enviar un email con tu consulta a info@ever.com o contactarnos a través de nuestras redes sociales.",
+            "title": "# _¡Contactanos!_ Estamos para ayudarte",
+            "text": "Completá el formulario y te responderemos dentro de las siguientes 24 hs. También podés enviar un email con tu consulta a _info@ever.com_ o contactarnos a través de nuestras redes sociales.",
             "formInputs": [
                 "Nombre",
                 "Empresa",

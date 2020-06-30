@@ -8,6 +8,11 @@ import PlansGrid from '../snippets/PlansGrid'
 const PlanTexts = styled(SectionTexts)`
     margin-left: auto;
     margin-right: auto;
+    h1 {
+        em {
+            display: block;
+        }
+    }
 `
 
 const Plans = (props) => {

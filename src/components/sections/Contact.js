@@ -25,6 +25,9 @@ const ContactTexts = styled(SectionTexts)`
     }
     h1 {
         text-align: left;
+        em {
+            display: block;
+        }
     }
     p {
         margin-left: 0;

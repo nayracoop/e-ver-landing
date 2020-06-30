@@ -15,8 +15,10 @@ const SectionTitle = styled(ReactMarkdown)`
         margin-bottom: 25px;
         line-height: 1.15;
 
-        strong {
-            color: pink;
+        strong,
+        em {
+            color: ${ (props) => props.theme.colors.secondary}; 
+            font-family: 'rotundamedium', sans-serif;
         }
 
         @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
@@ -35,8 +37,10 @@ const SectionText = styled(ReactMarkdown)`
         max-width: 75%;
         margin: auto;
 
-        b{
-            color: pink;
+        strong,
+        em {
+            color: ${ (props) => props.theme.colors.secondary}; 
+            font-family: 'rotundalight_italic', sans-serif;
         }
         
         @media (max-width: ${(props) => props.theme.pageWidth.m}px) {

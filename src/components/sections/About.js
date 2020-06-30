@@ -17,6 +17,10 @@ const AboutTexts = styled(SectionTexts)`
         text-align: left!important;
         margin-left: 0;
     }
+    p {
+        margin-right: auto;
+        margin-left: 0;
+    }
 `
 
 const AboutContainer = styled(SectionContainer)`
