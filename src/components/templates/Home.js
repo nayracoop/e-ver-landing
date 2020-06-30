@@ -26,6 +26,7 @@ const Home = (props) => {
                 <About
                     imgHeight={content.sections.about.imgHeight}
                     imgSrc={content.sections.about.imgSrc}
+                    imgAlt={content.sections.about.imgAlt}
                     sectionTitle={content.sections.about.title}
                     sectionText={content.sections.about.text} >
                 </About>
@@ -57,9 +58,11 @@ const Home = (props) => {
                 navItems={content.sections}
                 text={content.sections.footer.text}
                 imgHeight={content.sections.footer.imgHeight}
+                imgAlt={content.sections.footer.imgHeight}
                 imgSrc={content.sections.footer.imgSrc}
                 licenceImgSrc={content.sections.footer.licenceImgSrc}
                 licenceImgHeight={content.sections.footer.licenceImgHeight}
+                licenceImgAlt={content.sections.footer.licenceImgAlt}
                 licenceText={content.sections.footer.licenceText}
             >
             </Footer>

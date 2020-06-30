@@ -4,6 +4,7 @@ import Wrapper from '../layout/Wrapper'
 import SectionContainer from '../layout/SectionContainer'
 import SectionTexts from '../snippets/SectionTexts'
 import Image from '../snippets/Image'
+import { ReactComponent as Arrow } from '../../assets/img/arrow-left.svg'
 
 const LeftBlock = styled.div`
     @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
@@ -24,7 +25,6 @@ const AboutTexts = styled(SectionTexts)`
 `
 
 const AboutContainer = styled(SectionContainer)`
-    padding-top:15vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -43,16 +43,23 @@ const NavLink = styled.a`
     text-decoration: none;
     border-bottom: 2px dotted ${(props) => props.theme.colors.secondary};
     font-size: 1.2rem;
+    line-height: 2.25;
     position: relative;
-    &::after {
-        content: url('${require('../../assets/img/arrow-left.svg')}');
-        display: inline-block;
-        width: 25px;
-        margin-left: 10px;
-        bottom: 0px;
-        position: absolute;
+    transition: .2s ease-in-out;
+    &:hover {
+        color: ${(props) => props.theme.colors.primary};
+        border-color: ${(props) => props.theme.colors.primary};
+        svg polygon {
+            fill: ${(props) => props.theme.colors.primary};
+        }
     }
-
+    @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
+        font-size: 1.125rem;
+    }
+`
+const RightArrow = styled(Arrow)`
+    width: 25px;
+    margin-left: 10px;
 `
 
 const AboutImg = styled(Image)`
@@ -67,14 +74,14 @@ const AboutImg = styled(Image)`
 
 const About = (props) => {
     return (
-        <Wrapper minHeight="100vh">
+        <Wrapper minHeight="75vh">
             <AboutContainer>
                 <LeftBlock>
                     <AboutTexts sectionTitle={props.sectionTitle} sectionText={props.sectionText} ></AboutTexts>
-                    <NavLink href='#'>Conocé las características de la plataforma</NavLink>
+                    <NavLink href='#'>Conocé las características de la plataforma <RightArrow /> </NavLink>
                 </LeftBlock>
                 <RightBlock>
-                    <AboutImg imgHeight={props.imgHeight} imgSrc={props.imgSrc}></AboutImg>
+                    <AboutImg imgAlt={props.imgAlt} imgHeight={props.imgHeight} imgSrc={props.imgSrc}></AboutImg>
                 </RightBlock>
             </AboutContainer>
         </Wrapper >

@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Wrapper from '../layout/Wrapper'
 import SectionContainer from '../layout/SectionContainer'
 import SectionTexts from '../snippets/SectionTexts'
-import SocialMedia from '../snippets/SocialMedia'
 import ContactForm from '../snippets/ContactForm'
 
 const ContactContainer = styled(SectionContainer)`

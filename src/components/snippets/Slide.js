@@ -100,7 +100,7 @@ const Slide = (props) => {
     return (
         <SlideContainer>
             <SlideImgContainer>
-                <SlideImg height="100" src={require('../../assets/img/' + props.slideImage + '.svg')} />
+                <SlideImg alt={props.slideImgAlt} height="100" src={require('../../assets/img/' + props.slideImage + '.svg')} />
             </SlideImgContainer>
             <SlideInfo>
                 <SlideText textSize={props.textSize}>{props.text}</SlideText>

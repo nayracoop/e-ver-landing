@@ -90,7 +90,7 @@ const FooterNavbar = styled(FooterNav)`
                 margin: 10px 0;
                 a {
                     padding: 12px 0px;
-                    font-size: .925rem;
+                    font-size: 1.125rem;
                 }
             }
             ul {
@@ -141,7 +141,7 @@ const LicenceImg = styled(Image)`
 
 const LicenceText = styled.p`
     color: #fff;
-    font-size: 10px;
+    font-size: .6875rem;
     font-family: 'rotundalight', sans-serif;
     line-height: 1.5;
 
@@ -152,7 +152,7 @@ const Footer = (props) => {
             <FooterContainer>
                 <FooterWrapper>
                     <LeftBlock>
-                        <FooterLogo imgHeight={props.imgHeight} imgSrc={props.imgSrc}></FooterLogo>
+                        <FooterLogo imgAlt={props.imgAlt} imgHeight={props.imgHeight} imgSrc={props.imgSrc}></FooterLogo>
                         <Text>{props.text}</Text>
                     </LeftBlock>
                     <RightBlock>
@@ -162,7 +162,7 @@ const Footer = (props) => {
             </FooterContainer>
             <SubFooter>
                 <SectionContainer>
-                    <LicenceImg imgHeight={props.licenceImgHeight} imgSrc={props.licenceImgSrc}></LicenceImg>
+                    <LicenceImg imgAlt={props.licenceimgAlt} imgHeight={props.licenceImgHeight} imgSrc={props.licenceImgSrc}></LicenceImg>
                     <LicenceText>{props.licenceText}</LicenceText>
                 </SectionContainer>
             </SubFooter>

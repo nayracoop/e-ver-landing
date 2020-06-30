@@ -5,18 +5,21 @@
                 {
                     "text": "¡Organizamos tu evento virtual!",
                     "image": "event",
+                    "slideImgAlt": "Ilustración evento",
                     "buttonText": "Ver más",
                     "link": "que-es-ever"
                 },
                 {
                     "text": "Creamos experiencias a la medida de tu imaginación",
                     "image": "idea",
+                    "slideImgAlt": "Ilustración idea",
                     "buttonText": "Ver más",
                     "link": "servicios"
                 },
                 {
                     "text": "Tenemos un pack para el evento que estás pensando",
                     "image": "pack",
+                    "slideImgAlt": "Ilustración plan",
                     "buttonText": "Ver más",
                     "link": "plans"
                 }
@@ -29,6 +32,7 @@
             "title": "# ¿Qué es **e-ver**? ",
             "text": "_E-ver_ es un servicio multifacético que proporciona una verdadera solución en la organización de _eventos a distancia_. Involucra tanto las necesidades técnicas como los requerimientos comunicacionales que necesitás para crear tu evento. ",
             "imgSrc": "e-ver-print.svg",
+            "imgAlt": "Mockup e-ver",
             "imgHeight": "450"
         },
         "services": {
@@ -352,7 +356,7 @@
             "slug": "contacto",
             "navText": "Contacto",
             "title": "# _¡Contactanos!_ Estamos para ayudarte",
-            "text": "Completá el formulario y te responderemos dentro de las siguientes 24 hs. También podés enviar un email con tu consulta a _info@ever.com_ o contactarnos a través de nuestras redes sociales.",
+            "text": "Completá el formulario y te responderemos dentro de las siguientes 24 hs. También podés enviar un email con tu consulta a _info@ever.com_.",
             "formInputs": [
                 "Nombre",
                 "Empresa",
@@ -366,7 +370,9 @@
             "title": "",
             "imgHeight": "30",
             "licenceImgSrc": "licence.png",
+            "licenceImgAlt": "Licencia Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)",
             "imgSrc": "footer-logo.svg",
+            "imgAlt": "e-ver logo",
             "licenceImgHeight": "22",
             "licenceText": "El contenido de este sitio se distribuye bajo una licencia Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).",
             "text": "E-ver es un servicio multifacético que proporciona una verdadera solución en la organización de eventos a distancia. Involucra tanto las necesidades técnicas como los requerimientos comunicacionales que necesitás para crear tu evento. ",

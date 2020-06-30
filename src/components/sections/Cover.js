@@ -23,6 +23,7 @@ const Cover = (props) => {
                         < Slide
                             key={key}
                             slideImage={slide.image}
+                            slideImgAlt={slide.slideImgAlt}
                             text={slide.text}
                             textSize={props.textSize}
                             btnText={slide.buttonText}

@@ -11,7 +11,7 @@ const NavbarContainer = styled.div`
     left: 0;
     right: 0;
     z-index: 99;
-    padding: 15px;
+    padding: 25px 15px;
     box-shadow: 1px 1px 3px 1px rgba(128,128,128,.1);
 `
 const NavBarWrapper = styled.div`
@@ -42,6 +42,7 @@ const Brand = styled(Link)`
     display: flex;
     align-items: center;
     padding: 5px 0px;
+    cursor: pointer;
     svg {
         display: block;
     }
@@ -101,7 +102,7 @@ const NavItem = styled.li`
     cursor: pointer;
     margin: 0px 20px;
     a {
-        font-size: 1.125rem;
+        font-size: 1.2rem;
     }
     &:first-of-type {
         display: none;
@@ -116,7 +117,7 @@ const NavItem = styled.li`
 
 const Toggler = styled.button`
     height: 50px;
-    width: 45px;    
+    width: 50px;    
     margin-left: auto;
     font-family: ${(props) => props.theme.fonts.title};
     color: transparent;
