@@ -23,7 +23,7 @@
         "about": {
             "slug": "que-es-ever",
             "navText": "¿Qué es e-ver?",
-            "title": "¿Qué es e-ver? ",
+            "title": "# ¿Qué es **e-ver**? ",
             "text": "E-ver es un servicio multifacético que proporciona una verdadera solución en la organización de eventos a distancia. Involucra tanto las necesidades técnicas como los requerimientos comunicacionales que necesitás para crear tu evento. ",
             "imgSrc": "e-ver-print.svg",
             "imgHeight": "450"
@@ -31,7 +31,7 @@
         "services": {
             "slug": "servicios",
             "navText": "Servicios",
-            "title": "¿Por qué elegir e-ver para realizar tu próximo evento a distancia?",
+            "title": "# ¿Por qué elegir e-ver para realizar tu próximo evento a distancia?",
             "text": "Estas son algunas de las características que hacen de e-ver un producto único y confiable.",
             "servicesList": [
                 {
@@ -156,7 +156,7 @@
         "plans": {
             "slug": "plans",
             "navText": "Planes",
-            "title": "Elegí uno de los planes disponibles",
+            "title": "# Elegí uno de los planes disponibles",
             "text": "Si no encontrás la funcionalidad que necesitás, solicitá más información a través del formulario de contacto",
             "plansList": [
                 {
@@ -348,7 +348,7 @@
         "contact": {
             "slug": "contacto",
             "navText": "Contacto",
-            "title": "¡Contactanos! Estamos para ayudarte",
+            "title": "# ¡Contactanos! Estamos para ayudarte",
             "text": "Completá el formulario y te responderemos dentro de las siguientes 24 hs. También podés enviar un email con tu consulta a info@ever.com o contactarnos a través de nuestras redes sociales.",
             "formInputs": [
                 "Nombre",
