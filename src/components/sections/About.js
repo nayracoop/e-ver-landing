@@ -46,7 +46,8 @@ const NavLink = styled.a`
     line-height: 2.25;
     position: relative;
     transition: .2s ease-in-out;
-    &:hover {
+    &:hover,
+    &:active {
         color: ${(props) => props.theme.colors.primary};
         border-color: ${(props) => props.theme.colors.primary};
         svg polygon {

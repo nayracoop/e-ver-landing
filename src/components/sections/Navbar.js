@@ -13,6 +13,8 @@ const NavbarContainer = styled.div`
     z-index: 99;
     padding: 25px 15px;
     box-shadow: 1px 1px 3px 1px rgba(128,128,128,.1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform : translate3d(0, 0, 0);
 `
 const NavBarWrapper = styled.div`
     display: flex;

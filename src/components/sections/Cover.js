@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Slide from '../snippets/Slide'
 
 const SliderContainer = styled.section`
-    width: 100vw;
+    width: 100%;
     height:auto;
     overflow: hidden;
     display: flex;

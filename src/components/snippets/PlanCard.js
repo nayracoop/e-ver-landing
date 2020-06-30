@@ -16,7 +16,10 @@ const PlansWrapper = styled.li`
     text-align: center;
     margin-bottom: 50px;
     @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
-        margin: 15px 15px 0 0;
+        margin: 25px 5px;
+    }
+    @media (max-width: ${(props) => props.theme.pageWidth.s}px) {
+        margin: 25px 0px;
     }
 `
 

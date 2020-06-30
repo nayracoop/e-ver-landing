@@ -2,10 +2,14 @@ import styled, { withTheme } from 'styled-components'
 
 
 const SectionContainer = styled.div`
-    width: 95%;
+    width: calc(100% - 40px);
     margin: 0 auto;
     padding: 100px 20px;
     display: grid;
+    
+    @media(max-width: ${props => props.theme.pageWidth.m}px){
+        padding: 50px 20px;
+    }
 
     @media(min-width: ${props => props.theme.pageWidth.s}px){
         max-width: ${props => props.theme.pageWidth.m}px;
