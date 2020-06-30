@@ -38,6 +38,9 @@ const Title = styled.h2`
         left: 0;
         right: 0;
         margin: auto;
+    }    
+    @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
+        font-size: 1.8rem;
     }
 `
 const ServiceStatus = styled.span`
@@ -66,6 +69,9 @@ const Item = styled.li`
 const Icon = styled.img`
     margin: 0 auto;
     margin-bottom: 20px;
+    @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
+        height: 120px;
+    }
 `
 
 const PlanButton = styled(Button)`

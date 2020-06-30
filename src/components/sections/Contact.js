@@ -35,7 +35,7 @@ const ContactTexts = styled(SectionTexts)`
 
 const Contact = (props) => {
     return (
-        <Wrapper minHeight="50vh">
+        <Wrapper minHeight="80vh">
             <ContactContainer>
                 <ContactTexts sectionTitle={props.sectionTitle} sectionText={props.sectionText} ></ContactTexts>
                 <ContactForm></ContactForm>

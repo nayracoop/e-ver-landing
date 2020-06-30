@@ -21,7 +21,7 @@ const Label = styled.label`
     flex-basis: 45%;
     font-family: 'rotundamedium', sans-serif;
     font-size: 1.2rem;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
     color: ${(props) => props.theme.colors.primary};
     &.textarea-label {
         flex-basis: 100%;
@@ -29,13 +29,14 @@ const Label = styled.label`
     @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
         flex-basis: 100%;
         font-size: 1rem;
+        margin-bottom: 35px;
     }
 `
 
 const Input = styled.input`
     display: block;
     margin-top: 15px;
-    height: 40px;
+    height: 35px;
     width: calc(100% - 10px);
     border-radius: 8px;
     border: 1px solid #cecece;
@@ -80,6 +81,7 @@ const Textarea = styled.textarea`
     font-size: 1.125rem;
     color: ${ (props) => props.theme.colors.text};
     transition: .2s ease-in-out;
+    resize: none;
     &:hover,
     &:focus {
         border: 1px solid ${(props) => props.theme.colors.primary};
@@ -105,7 +107,7 @@ const ContactForm = (props) => {
             </Label>
 
             <Label>
-                Teléfono
+                Teléfono (opcional)
                 <Input type="text" name="phone" />
             </Label>
 
