@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from "react";
 import styled from 'styled-components'
+
 
 const Form = styled.form`
     flex-basis: 55%;
@@ -88,37 +89,78 @@ const Textarea = styled.textarea`
     }
 `
 
-const ContactForm = (props) => {
-    return (
-        <Form>
-            <Label>
-                Nombre
-                <Input type="text" name="name" />
-            </Label>
+function ContactForm() {
+  const [name, setName] = useState("")
+  const [companyName, setCompanyName] = useState("")
+  const [email, setEmail] = useState("")
+  const [phone, setPhone] = useState("")
+  const [message, setMessage] = useState("")
+  
+  return (
+    <Form>
+        <Label>
+            Nombre
+        <Input
+            value={name}
+            onChange={e => setName(e.target.value)}
+            placeholder="Nombre"
+            type="text"
+            name="name"
+            required
+        />
+        </Label>
 
-            <Label>
-                Nombre empresa
-                <Input type="text" name="company-name" />
-            </Label>
+        <Label>
+            Nombre empresa
+            <Input
+                value={companyName}
+                onChange={e => setCompanyName(e.target.value)}
+                placeholder="Nombre de tu empresa"
+                type="text"
+                name="companyName"
+                required
+            />
+        </Label>
 
-            <Label>
-                Email
-                <Input type="text" name="email" />
-            </Label>
+        <Label>
+            Email
+            <Input
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                placeholder="Dirección email"
+                type="email"
+                name="email"
+                required
+            />
+        </Label>
 
-            <Label>
-                Teléfono (opcional)
-                <Input type="text" name="phone" />
-            </Label>
-
-            <Label className="textarea-label">
-                Mensaje
-                <Textarea rows="5"/>
-            </Label>
-
-            <Input type="submit" value="Enviar" />
-        </Form>
-    )
+        <Label>
+            Teléfono (opcional)
+            <Input
+                value={phone}
+                onChange={e => setPhone(e.target.value)}
+                placeholder="N° de teléfono"
+                type="text"
+                name="phone"
+            />
+        </Label>
+        
+        <Label className="textarea-label">
+            Mensaje
+            <Textarea
+                value={message}
+                onChange={e => setMessage(e.target.value)}
+                placeholder="Escribí tu mensaje"
+                type="textarea"
+                name="message"
+                rows="5"
+                required
+            />      
+        </Label>
+        
+        <Input type="submit" value="Enviar" />
+    </Form>
+  )
 }
 
 export default ContactForm
