@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 
 const BtnLink = styled(Link)`
@@ -9,6 +9,7 @@ const BtnLink = styled(Link)`
     text-decoration: none;
     padding: 12px 40px;
     border-radius: 45px;
+    cursor: pointer;
     background: ${ (props) => props.theme.colors.gradient}; 
     @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
         font-size: 1.125rem;
@@ -21,7 +22,15 @@ const BtnLink = styled(Link)`
 
 const Button = (props) => {
     return (
-        <BtnLink className={props.className}>{props.btnText}</BtnLink>
+        <BtnLink
+            to={props.link}
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            delay={100}
+            className={props.className}>{props.btnText}
+        </BtnLink>
     )
 }
 

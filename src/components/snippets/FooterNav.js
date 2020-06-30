@@ -66,7 +66,6 @@ const FooterNav = (props) => {
             <NavBarWrapper>
                 <Nav>
                     <Menu className="menu">
-
                         {
                             Object.entries(props.navItems).map((navItem, key) => {
                                 return (

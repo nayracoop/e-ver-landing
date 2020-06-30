@@ -4,18 +4,21 @@
             "slides": [
                 {
                     "text": "¡Organizamos tu evento virtual!",
-                    "image": "pack",
-                    "buttonText": ""
+                    "image": "event",
+                    "buttonText": "Ver más",
+                    "link": "que-es-ever"
                 },
                 {
                     "text": "Creamos experiencias a la medida de tu imaginación",
-                    "image": "pack",
-                    "buttonText": ""
+                    "image": "idea",
+                    "buttonText": "Ver más",
+                    "link": "servicios"
                 },
                 {
                     "text": "Tenemos un pack para el evento que estás pensando",
                     "image": "pack",
-                    "buttonText": ""
+                    "buttonText": "Ver más",
+                    "link": "plans"
                 }
             ],
             "slug": "home"
