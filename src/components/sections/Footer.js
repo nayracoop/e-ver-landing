@@ -36,7 +36,7 @@ const FooterLogo = styled(Image)`
 
 const Text = styled.p`
     font-family: 'rotundalight', sans-serif;
-    font-size: .875rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 35px;
 `

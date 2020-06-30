@@ -20,7 +20,7 @@ const Form = styled.form`
 const Label = styled.label`
     flex-basis: 45%;
     font-family: 'rotundamedium', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-bottom: 35px;
     color: ${(props) => props.theme.colors.primary};
     &.textarea-label {
@@ -55,6 +55,7 @@ const Input = styled.input`
         color: #fff;
         padding: 12px 80px;
         font-family: 'rotundaregular', sans-serif;
+        font-size: 1.2rem;
         height: unset;
         width: auto;
         margin-left: auto;

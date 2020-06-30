@@ -41,7 +41,7 @@ const NavBarWrapper = styled.div`
 const Brand = styled(Link)`
     display: flex;
     align-items: center;
-    padding: 5px 15px;
+    padding: 5px 0px;
     svg {
         display: block;
     }

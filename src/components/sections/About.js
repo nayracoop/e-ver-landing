@@ -38,6 +38,7 @@ const NavLink = styled.a`
     padding-bottom: 5px;
     text-decoration: none;
     border-bottom: 2px dotted ${(props) => props.theme.colors.secondary};
+    font-size: 1.2rem;
     position: relative;
     &::after {
         content: url('${require('../../assets/img/arrow-left.svg')}');
@@ -66,7 +67,7 @@ const About = (props) => {
             <AboutContainer>
                 <LeftBlock>
                     <AboutTexts sectionTitle={props.sectionTitle} sectionText={props.sectionText} ></AboutTexts>
-                    <NavLink target="_blank" href='https://instagram.com'>Conocé las características de la plataforma</NavLink>
+                    <NavLink href='#'>Conocé las características de la plataforma</NavLink>
                 </LeftBlock>
                 <RightBlock>
                     <AboutImg imgHeight={props.imgHeight} imgSrc={props.imgSrc}></AboutImg>
