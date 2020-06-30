@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from "react-router-dom"
-import { ReactComponent as Logo } from '../../assets/img/logo.svg'
-import Button from '../snippets/Button'
+import { Link } from "react-scroll"
 
 const NavbarContainer = styled.div`
     background: transparent;
@@ -68,18 +66,24 @@ const FooterNav = (props) => {
             <NavBarWrapper>
                 <Nav>
                     <Menu className="menu">
-                        <NavItem>
-                            <NavLink to='/#que-es-ever'>¿Qué es e-ver?</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink to='/#caracteristicas'>Características</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink to='/#planes'>Planes</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink to='/#contacto'>Contacto</NavLink>
-                        </NavItem>
+                        {
+                            Object.entries(props.navItems).map((navItem, key) => {
+                                return (
+                                    <NavItem key={key}>
+                                        <NavLink
+                                            activeClass="active"
+                                            to={navItem[1].slug}
+                                            spy={true}
+                                            smooth={true}
+                                            offset={-70}
+                                            duration={500}
+                                            delay={100}>
+                                            {navItem[1].navText}
+                                        </NavLink>
+                                    </NavItem>
+                                )
+                            })
+                        }
                         <Menu>
                             <NavItem>
                                 <NavLink to='/#terminos-y-condiciones'>Términos y condiciones</NavLink>

@@ -80,7 +80,7 @@ const PlanButton = styled(Button)`
 
 const PlanCard = (props) => {
     return (
-        <PlansWrapper >            
+        <PlansWrapper >
             <Wrapper>
                 <Icon height="130" src={require('../../assets/img/' + props.icon + '.svg')} ></Icon>
                 <Title>{props.name}</Title>
@@ -95,7 +95,7 @@ const PlanCard = (props) => {
                             )
                         })}
                 </ServicesList>
-                <PlanButton btnText={props.btnText}/>
+                <PlanButton link="contacto" btnText={props.btnText} />
             </Wrapper>
         </PlansWrapper >
     )

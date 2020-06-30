@@ -156,8 +156,8 @@ const Footer = (props) => {
                         <Text>{props.text}</Text>
                     </LeftBlock>
                     <RightBlock>
-                        <FooterNavbar />
-                    </RightBlock>                    
+                        <FooterNavbar navItems={props.navItems} />
+                    </RightBlock>
                 </FooterWrapper>
             </FooterContainer>
             <SubFooter>

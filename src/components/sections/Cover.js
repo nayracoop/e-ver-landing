@@ -25,7 +25,8 @@ const Cover = (props) => {
                             slideImage={slide.image}
                             text={slide.text}
                             textSize={props.textSize}
-                            btnText={slide.buttonText} >
+                            btnText={slide.buttonText}
+                            link={slide.link} >
                         </Slide>
                     </SlideContainer>
                 )

@@ -104,7 +104,7 @@ const Slide = (props) => {
             </SlideImgContainer>
             <SlideInfo>
                 <SlideText textSize={props.textSize}>{props.text}</SlideText>
-                <Button btnText={props.btnText} />
+                <Button link={props.link} btnText={props.btnText} />
             </SlideInfo>
         </SlideContainer>
     )
