@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Wrapper from '../layout/Wrapper'
 import SectionContainer from '../layout/SectionContainer'
 import Image from '../snippets/Image'
-import SocialLinks from '../snippets/SocialLinks'
 import FooterNav from '../snippets/FooterNav'
 
 const FooterMainContainer = styled.footer`
@@ -50,11 +49,19 @@ const FooterNavbar = styled(FooterNav)`
         flex-direction: column;
         align-items: flex-end;
         li {
+            margin-top: 8px;
+            margin-bottom: 8px;
             a {
-                padding: 12px 5px;
+                padding: 8px;
+                border-bottom: 2px dotted transparent;
+                transition: .2s ease-in-out;
+                &:hover {
+                    border-bottom: 2px dotted #fff;
+                }
             }            
         }
         ul {
+            display: none;
             flex-direction: row;
             justify-content: center;
             margin-top: 80px;
@@ -147,7 +154,6 @@ const Footer = (props) => {
                     <LeftBlock>
                         <FooterLogo imgHeight={props.imgHeight} imgSrc={props.imgSrc}></FooterLogo>
                         <Text>{props.text}</Text>
-                        <SocialLinks/>
                     </LeftBlock>
                     <RightBlock>
                         <FooterNavbar />
