@@ -51,8 +51,19 @@ const NavLink = styled(Link)`
     font-family: ${(props) => props.theme.fonts.title};
     color: ${(props) => props.theme.colors.primary};
     text-decoration: none;
-    padding: 25px 5px;
+    padding: 10px 5px;
     display: block;
+    border-bottom: 2px dotted transparent;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    @media (max-width: ${(props) => props.theme.pageWidth.l}px) {
+        paddding: 15px 5px;
+    }
+    &.active,
+    &:hover {
+        color: ${(props) => props.theme.colors.secondary};
+        border-bottom: 2px dotted ${(props) => props.theme.colors.secondary};
+    }
 `
 
 const BrandText = styled.h1`
@@ -91,8 +102,14 @@ const NavItem = styled.li`
     a {
         font-size: 1.125rem;
     }
+    &:first-of-type {
+        display: none;
+    }
     @media (max-width: ${(props) => props.theme.pageWidth.l}px) {
         margin: 15px 15px;
+        &:nth-child(2) {
+            margin-top: 30px;
+        }        
     }
 `
 
