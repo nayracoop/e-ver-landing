@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Wrapper from '../layout/Wrapper'
 import Image from '../snippets/Image'
 
 const ServicesWrapper = styled.li`
@@ -13,7 +12,11 @@ const ServicesWrapper = styled.li`
     flex-direction: column;
     @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
         flex-direction: row;
+        margin: 15px 0;
     }
+`
+
+const ServiceInnerWrapper = styled.div`
 `
 
 const Title = styled.h2`
@@ -68,6 +71,7 @@ const IconWrapper = styled.div`
     @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
         margin-right: 15px;
         margin-bottom: 0;
+        margin-left: 0;
         height: 75px;
         &::before {
             width: 35px;
@@ -91,7 +95,7 @@ const ServiceCard = (props) => {
             <IconWrapper>
                 <Icon height="95" src={require ('../../assets/img/'+ props.icon + '.svg')}></Icon>
             </IconWrapper>
-            <Wrapper>
+            <ServiceInnerWrapper>
                 <Title>{props.name}</Title>
                 <Description>{props.lead}</Description>
                 <ul>
@@ -101,7 +105,7 @@ const ServiceCard = (props) => {
                         )
                     })}
                 </ul>
-            </Wrapper>
+            </ServiceInnerWrapper>
         </ServicesWrapper>
     )
 }

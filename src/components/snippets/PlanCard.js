@@ -15,6 +15,9 @@ const PlansWrapper = styled.li`
     box-shadow: ${(props) => props.theme.colors.shadow};
     text-align: center;
     margin-bottom: 50px;
+    @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
+        margin: 15px 15px 0 0;
+    }
 `
 
 const Title = styled.h2`
