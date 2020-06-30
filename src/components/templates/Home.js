@@ -1,5 +1,5 @@
 import React from 'react'
-import Wrapper from '../layout/Wrapper'
+import { Element } from 'react-scroll'
 import Cover from '../sections/Cover'
 import About from '../sections/About'
 import Services from '../sections/Services'
@@ -12,38 +12,47 @@ import content from '../../assets/content/content.json'
 
 const Home = (props) => {
     return (
-        <Wrapper minHeight="100vh">
+        <div >
             <Nav
-                btnText='Contratá e-ver'
+                navItems={content.sections}
             ></Nav>
-            <Cover
-                slides={content.sections.cover.slides}
-                slideImage='pack'
-                text='Creamos experiencias a la medida de tus ideas'
-                textSize='150'
-                btnText='Ver más'
-            ></Cover>
-            <About
-                imgHeight={content.sections.about.imgHeight}
-                imgSrc={content.sections.about.imgSrc}
-                sectionTitle={content.sections.about.title}
-                sectionText={content.sections.about.text} >
-            </About>
-            <Services
-                sectionTitle={content.sections.services.title}
-                sectionText={content.sections.services.text}
-                services={content.sections.services.servicesList}>
-            </Services>
-            <Plans
-                sectionTitle={content.sections.plans.title}
-                sectionText={content.sections.plans.text}
-                plansList={content.sections.plans.plansList}
-                btnText='Cotizar'>
-            </Plans>
-            <Contact
-                sectionTitle={content.sections.contact.title}
-                sectionText={content.sections.contact.text}>
-            </Contact>
+            <Element name={content.sections.cover.slug}>
+                <Cover
+                    slides={content.sections.cover.slides}
+                    textSize='150'
+                ></Cover>
+            </Element>
+            <Element name={content.sections.about.slug}>
+                <About
+                    imgHeight={content.sections.about.imgHeight}
+                    imgSrc={content.sections.about.imgSrc}
+                    sectionTitle={content.sections.about.title}
+                    sectionText={content.sections.about.text} >
+                </About>
+            </Element>
+            <Element name={content.sections.services.slug}>
+                <Services
+
+                    sectionTitle={content.sections.services.title}
+                    sectionText={content.sections.services.text}
+                    services={content.sections.services.servicesList}>
+                </Services>
+            </Element>
+            <Element name={content.sections.plans.slug}>
+                <Plans
+                    sectionTitle={content.sections.plans.title}
+                    sectionText={content.sections.plans.text}
+                    plansList={content.sections.plans.plansList}
+                    btnText='Cotizar'>
+                </Plans>
+            </Element>
+            <Element name={content.sections.contact.slug}>
+                <Contact
+                    sectionTitle={content.sections.contact.title}
+                    sectionText={content.sections.contact.text}>
+                </Contact>
+            </Element>
+
             <Footer
                 text={content.sections.footer.text}
                 imgHeight={content.sections.footer.imgHeight}
@@ -53,7 +62,7 @@ const Home = (props) => {
                 licenceText={content.sections.footer.licenceText}
             >
             </Footer>
-        </Wrapper>
+        </div>
     )
 }
 

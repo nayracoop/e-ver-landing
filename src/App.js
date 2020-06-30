@@ -42,7 +42,7 @@ class App extends Component {
 
   render() {
     return (
-      <Wrapper ref={this.container} className="App">
+      <div ref={this.container} className="App">
         <ThemeProvider theme={theme}>
           <Route path="/" exact>
             <UnderConstruction
@@ -55,7 +55,7 @@ class App extends Component {
             <Home></Home>
           </Route>
         </ThemeProvider>
-      </Wrapper>
+      </div>
     );
   }
 }

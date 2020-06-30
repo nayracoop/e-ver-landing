@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import Slide from '../snippets/Slide'
 
-const SliderContainer = styled.div`
+const SliderContainer = styled.section`
     width: 100vw;
-    height:100vh;
+    height:auto;
     overflow: hidden;
     display: flex;
 `
