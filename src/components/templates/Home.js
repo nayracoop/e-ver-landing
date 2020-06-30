@@ -54,6 +54,7 @@ const Home = (props) => {
             </Element>
 
             <Footer
+                navItems={content.sections}
                 text={content.sections.footer.text}
                 imgHeight={content.sections.footer.imgHeight}
                 imgSrc={content.sections.footer.imgSrc}
