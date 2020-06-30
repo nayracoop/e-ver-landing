@@ -98,6 +98,7 @@ const Menu = styled.ul`
 `
 
 const NavItem = styled.li`
+    cursor: pointer;
     margin: 0px 20px;
     a {
         font-size: 1.125rem;
@@ -167,7 +168,11 @@ const Navbar = (props) => {
     return (
         <NavbarContainer>
             <NavBarWrapper>
-                <Brand>
+                <Brand to="home"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    delay={100}>
                     <BrandText>e-ver</BrandText>
                     <Logo height="28" />
                 </Brand>
