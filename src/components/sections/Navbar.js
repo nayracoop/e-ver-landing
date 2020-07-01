@@ -159,6 +159,7 @@ const CallToAction = styled(Button)`
     display: flex;
 `
 const Navbar = (props) => {
+
     const showMenu = () => {
         const menu = document.querySelector('.menu')
         const toggler = document.querySelector('.toggler')
@@ -167,6 +168,7 @@ const Navbar = (props) => {
         toggler.classList.toggle('open')
         bodyTag.classList.toggle('opened-menu')
     }
+
     return (
         <NavbarContainer>
             <NavBarWrapper>
@@ -192,7 +194,8 @@ const Navbar = (props) => {
                                             smooth={true}
                                             offset={-70}
                                             duration={500}
-                                            delay={100}>
+                                            delay={100}
+                                            onClick={showMenu}>
                                             {navItem[1].navText}
                                         </NavLink>
                                     </NavItem>
