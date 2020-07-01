@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 118.6 108" style="enable-background:new 0 0 118.6 108;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#494066;}
+	.st2{fill:url(#SVGID_1_);}
+</style>
+<g>
+	<rect x="19.3" y="25" class="st0" width="80.1" height="57.9"/>
+	<path class="st1" d="M100.4,84H18.2V24h82.1C100.4,24,100.4,84,100.4,84z M20.3,81.9h78V26.1h-78L20.3,81.9z"/>
+	<rect x="19.3" y="33.2" class="st1" width="80.1" height="2.1"/>
+	<path class="st1" d="M81.9,35.2H70.6V24h11.2L81.9,35.2L81.9,35.2z M72.7,33.2h7.2V26h-7.2V33.2z"/>
+	<path class="st1" d="M91.1,35.2H79.9V24h11.2V35.2z M81.9,33.2h7.2V26h-7.2V33.2z"/>
+	<path class="st1" d="M100.4,35.2H89.1V24h11.2V35.2z M91.1,33.2h7.2V26h-7.2V33.2z"/>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="46.1" y1="-841.2817" x2="72.7229" y2="-841.2817" gradientTransform="matrix(1 0 0 -1 0 -784.1102)">
+		<stop  offset="0" style="stop-color:#FF2E79"/>
+		<stop  offset="1" style="stop-color:#C22998"/>
+	</linearGradient>
+	<circle class="st2" cx="59.4" cy="57.2" r="13.3"/>
+	<path class="st1" d="M59.4,71.5c-7.9,0-14.3-6.4-14.3-14.3s6.4-14.3,14.3-14.3s14.3,6.4,14.3,14.3l0,0
+		C73.7,65.1,67.3,71.5,59.4,71.5z M59.4,44.9c-6.8,0-12.3,5.5-12.3,12.3s5.5,12.3,12.3,12.3s12.3-5.5,12.3-12.3l0,0
+		C71.6,50.4,66.2,44.9,59.4,44.9z"/>
+	<path class="st1" d="M42.7,73.5c-9-9-9-23.5-0.1-32.5c0,0,0,0,0.1-0.1l1.5,1.5c-8.2,8.2-8.2,21.4,0,29.7l0,0L42.7,73.5z"/>
+	<path class="st1" d="M76.1,73.5L74.6,72c8.2-8.1,8.2-21.4,0.1-29.7c0,0,0,0-0.1-0.1l1.5-1.5C85.1,49.8,85.1,64.4,76.1,73.5
+		C76.1,73.4,76.1,73.4,76.1,73.5L76.1,73.5z"/>
+	<path class="st1" d="M46.1,71.3c-7.8-7.8-7.8-20.5,0-28.3l1.5,1.5c-6.9,7-6.9,18.3,0,25.4L46.1,71.3z"/>
+	<path class="st1" d="M72.8,71.3l-1.5-1.5c6.9-7,6.9-18.3,0-25.4l1.5-1.5C80.6,50.8,80.6,63.5,72.8,71.3z"/>
+	<polygon class="st0" points="55.7,51.9 55.7,62.5 65,57.2 	"/>
+</g>
+</svg>
