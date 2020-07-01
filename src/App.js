@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import { ThemeProvider } from "styled-components";
-import { withRouter, Route } from "react-router-dom"
 
-import { Wrapper } from './components/layout/Wrapper'
-import UnderConstruction from './components/sections/UnderConstruction'
 import Home from './components/templates/Home'
 
 //import BackgroundImg from './assets/img/bg.svg'
@@ -44,20 +41,11 @@ class App extends Component {
     return (
       <div ref={this.container} className="App">
         <ThemeProvider theme={theme}>
-          <Route path="/" exact>
-            <UnderConstruction
-              title="e-ver"
-              lead="¡Organizamos tu evento virtual!"
-              text="Sitio en construcción"
-            />
-          </Route>
-          <Route path="/home" exact>
-            <Home></Home>
-          </Route>
+          <Home></Home>
         </ThemeProvider>
       </div>
     );
   }
 }
 
-export default withRouter(App);
+export default App;
