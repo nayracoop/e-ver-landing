@@ -1,5 +1,5 @@
 import React from 'react'
-import { Element } from 'react-scroll'
+import styled from 'styled-components'
 import Cover from '../sections/Cover'
 import About from '../sections/About'
 import Services from '../sections/Services'
@@ -9,6 +9,8 @@ import Nav from '../sections/Navbar'
 import Footer from '../sections/Footer'
 import content from '../../assets/content/content.json'
 
+const Element = styled.section`
+`
 
 const Home = (props) => {
     return (

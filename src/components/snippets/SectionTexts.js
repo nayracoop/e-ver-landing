@@ -22,7 +22,7 @@ const SectionTitle = styled(ReactMarkdown)`
         }
 
         @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
     }
 `

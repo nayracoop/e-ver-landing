@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import { ReactComponent as Logo } from '../../assets/img/logo.svg'
 import Button from '../snippets/Button'
 
-const NavbarContainer = styled.div`
+const NavbarContainer = styled.header`
     background: #fff;
     position: fixed;
     top: 0;

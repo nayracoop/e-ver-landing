@@ -29,7 +29,7 @@ const Label = styled.label`
     }
     @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
         flex-basis: 100%;
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-bottom: 35px;
     }
 `

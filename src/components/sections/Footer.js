@@ -6,6 +6,7 @@ import Image from '../snippets/Image'
 import FooterNav from '../snippets/FooterNav'
 
 const FooterMainContainer = styled.footer`
+    margin-top: 50px;
 `
 
 const FooterContainer = styled(Wrapper)`
@@ -55,6 +56,7 @@ const FooterNavbar = styled(FooterNav)`
                 padding: 8px;
                 border-bottom: 2px dotted transparent;
                 transition: .2s ease-in-out;
+                cursor: pointer;
                 &:hover {
                     border-bottom: 2px dotted #fff;
                 }
