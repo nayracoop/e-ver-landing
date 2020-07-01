@@ -15,11 +15,12 @@ const PlansWrapper = styled.li`
     box-shadow: ${(props) => props.theme.colors.shadow};
     text-align: center;
     margin-bottom: 50px;
+    max-width: 220px;
     @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
         margin: 25px 5px;
     }
     @media (max-width: ${(props) => props.theme.pageWidth.s}px) {
-        margin: 25px 0px;
+        margin: 25px auto;
     }
 `
 
@@ -48,12 +49,13 @@ const Title = styled.h2`
 `
 const ServiceStatus = styled.span`
     position: absolute;
-    left: -25px;
+    left: 0px;
     &.included {
         color: #6caf61;
     }
     &.not-included {
         color: #ff0000;
+        font-size: 1.3rem;
     }
 `
 
@@ -66,12 +68,14 @@ const Item = styled.li`
         font-size: 1.125rem;
         color: ${(props) => props.theme.colors.primary};
         margin-bottom: 10px;
-        padding-left: 5px;
+        //padding-left: 5px;
+        margin-left: 25px;
 `
 
 const Icon = styled.img`
     margin: 0 auto;
     margin-bottom: 20px;
+    pointer-events: none;
     @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
         height: 120px;
     }
