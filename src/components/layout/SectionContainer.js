@@ -4,7 +4,7 @@ import styled, { withTheme } from 'styled-components'
 const SectionContainer = styled.div`
     width: calc(100% - 40px);
     margin: 0 auto;
-    padding: 100px 20px;
+    padding: 30px 20px;
     display: grid;
     
     @media(max-width: ${props => props.theme.pageWidth.m}px){

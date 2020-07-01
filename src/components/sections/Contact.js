@@ -8,6 +8,7 @@ import ContactForm from '../snippets/ContactForm'
 const ContactContainer = styled(SectionContainer)`
     display: flex!important;
     align-items: flex-start;
+    padding-top: 100px;
     @media (max-width: ${(props) => props.theme.pageWidth.l}px) {
         flex-wrap: wrap;
     }
