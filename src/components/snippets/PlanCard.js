@@ -28,7 +28,7 @@ const PlansInnerWrapper = styled(Wrapper)`
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 50px;
-    height: calc(100% - 60px);
+    height: calc(100% - 100px);
     justify-content: space-between;
 
 `
