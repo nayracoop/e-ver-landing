@@ -17,14 +17,18 @@ const Arrow = styled.div`
     z-index: 1;
     position: absolute;
     top: 50vh;
-    left:${props => props.align === "left" ? "20px" : ""};
-    right:${props => props.align === "right" ? "20px;" : ""};
+    left:${props => props.align === "left" ? "10px" : ""};
+    right:${props => props.align === "right" ? "10px;" : ""};
     width: 20px;
     height: 25px;
     background-color: lightgrey;
     cursor: pointer;
     border-radius: 40px 0 0 40px;
-    transform: rotate(${props => props.align === "right" ? "180deg" : ""});
+    transform: rotate(${props => props.align === "right" ? "180deg" : ""});    
+    @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
+        width: 30px; 
+        height: 35px; 
+    }
 `
 
 const Cover = (props) => {
@@ -86,7 +90,6 @@ const Cover = (props) => {
                                 slideImage={slide.image}
                                 slideImgAlt={slide.slideImgAlt}
                                 text={slide.text}
-                                textSize={props.textSize}
                                 btnText={slide.buttonText}
                                 link={slide.link} >
                             </Slide>

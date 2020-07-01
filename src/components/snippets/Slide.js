@@ -41,6 +41,11 @@ const SlideImg = styled.img`
         margin-left: auto;
         margin-right: auto;
     }
+    @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
+        height: 165px;
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
 `
 const SlideInfo = styled.div`
     display: flex;
@@ -59,24 +64,30 @@ const SlideInfo = styled.div`
     @media (min-width: ${(props) => props.theme.pageWidth.s}px) and (max-width: ${(props) => props.theme.pageWidth.l}px) {
         max-width: 60%;
     }
+    @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
+        padding: 0 60px;
+    }
 `
 const SlideText = styled.p`
     font-family: ${(props) => props.theme.fonts.display};
-    font-size: ${props => props.textSize ? `${props.textSize / 40}rem` : "2rem"};
+    font-size: 4rem;
     position: relative;
     max-width: 70%;
     color: ${(props) => props.theme.colors.primary};
     margin-bottom: 55px;
     padding-bottom: 55px;
-    @media (max-width: ${(props) => props.theme.pageWidth.xxl}px) {
-        font-size: ${props => props.textSize ? `${props.textSize / 55}rem` : "2rem"};
-    }
     @media (max-width: ${(props) => props.theme.pageWidth.l}px) {
-        font-size: ${props => props.textSize ? `${props.textSize / 70}rem` : "2rem"};
+        font-size: 3rem;
         max-width: unset;
         margin: auto;
         padding-bottom: 40px;
         margin-bottom: 40px;
+    }
+    @media (min-width: ${(props) => props.theme.pageWidth.l}px) and (max-width: ${(props) => props.theme.pageWidth.xxl}px) {
+        font-size: 3.25rem;
+    }
+    @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
+        font-size: 2.25rem;
     }
     &::after {
         content: '';
@@ -99,7 +110,7 @@ const Slide = (props) => {
                 <SlideImg alt={props.slideImgAlt} height="100" src={require('../../assets/img/' + props.slideImage + '.svg')} />
             </SlideImgContainer>
             <SlideInfo>
-                <SlideText textSize={props.textSize}>{props.text}</SlideText>
+                <SlideText>{props.text}</SlideText>
                 <Button link={props.link} btnText={props.btnText} />
             </SlideInfo>
         </SlideContainer>
