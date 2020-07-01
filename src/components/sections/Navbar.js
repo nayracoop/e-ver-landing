@@ -90,13 +90,12 @@ const Menu = styled.ul`
         flex-direction: column;
         justify-content: flex-start;
         left: 0;
-        top: 80px;
+        top: 100px;
         width: 100%;
         background: #fff;
         transform: translateX(-100%);
         transition: .3s ease-in-out;
         border-top: 1px solid magenta;
-        // padding-top: 25px;
     }
 `
 

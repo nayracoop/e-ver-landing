@@ -65,6 +65,7 @@ const RightArrow = styled(Arrow)`
 
 const AboutImg = styled(Image)`
     margin-bottom: 35px;
+    pointer-events: none;
     @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
         max-width: 75%;
         margin: auto;

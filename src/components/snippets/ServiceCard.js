@@ -83,6 +83,7 @@ const Icon = styled.img`
     position: relative;
     z-index: 4;
     margin: auto;
+    pointer-events: none;
     @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
         height: 75px;
     }
