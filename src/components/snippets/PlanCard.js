@@ -94,7 +94,6 @@ const PlanCard = (props) => {
                 <ServicesList>
                     {
                         props.list.map((service, key) => {
-                            console.log(service)
                             return (
                                 <Item key={key}>
                                     <ServiceStatus className={service.included ? "included" : "not-included"}>{service.included ? "✔" : "x"} </ServiceStatus>{service.name}

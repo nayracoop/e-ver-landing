@@ -17,11 +17,9 @@ const Cover = (props) => {
     return (
         <SliderContainer>
             {props.slides.map((slide, key) => {
-                console.log(slide)
                 return (
-                    <SlideContainer>
+                    <SlideContainer key={key}>
                         < Slide
-                            key={key}
                             slideImage={slide.image}
                             slideImgAlt={slide.slideImgAlt}
                             text={slide.text}

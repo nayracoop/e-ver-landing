@@ -24,7 +24,6 @@ const PlansGrid = (props) => {
     return (
         <GridContainer>
             {props.plansList.map((plan, key) => {
-                console.log(plan.servicesList)
                 return (
                     <PlanCard
                         key={key}

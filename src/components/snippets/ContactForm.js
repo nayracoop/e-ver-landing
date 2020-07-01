@@ -90,77 +90,95 @@ const Textarea = styled.textarea`
 `
 
 function ContactForm() {
-  const [name, setName] = useState("")
-  const [companyName, setCompanyName] = useState("")
-  const [email, setEmail] = useState("")
-  const [phone, setPhone] = useState("")
-  const [message, setMessage] = useState("")
-  
-  return (
-    <Form>
-        <Label>
-            Nombre
-        <Input
-            value={name}
-            onChange={e => setName(e.target.value)}
-            placeholder="Nombre"
-            type="text"
-            name="name"
-            required
-        />
-        </Label>
+    const [name, setName] = useState("")
+    const [companyName, setCompanyName] = useState("")
+    const [email, setEmail] = useState("")
+    const [phone, setPhone] = useState("")
+    const [message, setMessage] = useState("")
+    const [mailSent, setMailSent] = useState("")
+    const [error, setError] = useState("")
 
-        <Label>
-            Nombre empresa
-            <Input
-                value={companyName}
-                onChange={e => setCompanyName(e.target.value)}
-                placeholder="Nombre de tu empresa"
-                type="text"
-                name="companyName"
-                required
-            />
-        </Label>
 
-        <Label>
-            Email
-            <Input
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-                placeholder="Dirección email"
-                type="email"
-                name="email"
-                required
-            />
-        </Label>
+    const printFormData = () => {
+        console.log(name)
+        console.log(companyName)
+        console.log(email)
+        console.log(phone)
+        console.log(message)
+        console.log(mailSent)
+        console.log(error)
+    }
 
-        <Label>
-            Teléfono (opcional)
+    const handleFormSubmit = () => {
+        printFormData()
+    }
+
+
+    return (
+        <Form>
+            <Label>
+                Nombre
             <Input
-                value={phone}
-                onChange={e => setPhone(e.target.value)}
-                placeholder="N° de teléfono"
-                type="text"
-                name="phone"
-            />
-        </Label>
-        
-        <Label className="textarea-label">
-            Mensaje
+                    value={name}
+                    onChange={e => setName(e.target.value)}
+                    placeholder="Nombre"
+                    type="text"
+                    name="name"
+                    required
+                />
+            </Label>
+
+            <Label>
+                Nombre empresa
+            <Input
+                    value={companyName}
+                    onChange={e => setCompanyName(e.target.value)}
+                    placeholder="Nombre de tu empresa"
+                    type="text"
+                    name="companyName"
+                    required
+                />
+            </Label>
+
+            <Label>
+                Email
+            <Input
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
+                    placeholder="Dirección email"
+                    type="email"
+                    name="email"
+                    required
+                />
+            </Label>
+
+            <Label>
+                Teléfono (opcional)
+            <Input
+                    value={phone}
+                    onChange={e => setPhone(e.target.value)}
+                    placeholder="N° de teléfono"
+                    type="text"
+                    name="phone"
+                />
+            </Label>
+
+            <Label className="textarea-label">
+                Mensaje
             <Textarea
-                value={message}
-                onChange={e => setMessage(e.target.value)}
-                placeholder="Escribí tu mensaje"
-                type="textarea"
-                name="message"
-                rows="5"
-                required
-            />      
-        </Label>
-        
-        <Input type="submit" value="Enviar" />
-    </Form>
-  )
+                    value={message}
+                    onChange={e => setMessage(e.target.value)}
+                    placeholder="Escribí tu mensaje"
+                    type="textarea"
+                    name="message"
+                    rows="5"
+                    required
+                />
+            </Label>
+
+            <Input type="submit" value="Enviar" onClick={handleFormSubmit} />
+        </Form>
+    )
 }
 
 export default ContactForm
