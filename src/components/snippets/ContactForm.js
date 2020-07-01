@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from 'styled-components'
 
-
 const Form = styled.form`
     flex-basis: 55%;
     border-radius: 20px;
@@ -90,28 +89,33 @@ const Textarea = styled.textarea`
 `
 
 function ContactForm() {
-    const [name, setName] = useState("")
-    const [companyName, setCompanyName] = useState("")
-    const [email, setEmail] = useState("")
-    const [phone, setPhone] = useState("")
-    const [message, setMessage] = useState("")
-    const [mailSent, setMailSent] = useState("")
-    const [error, setError] = useState("")
 
+    const [state, setState] = useState({
+        name: "",
+        companyName: "",
+        email: "",
+        phone: "",
+        message: "",
+        mailSent: "",
+        error: ""
+    })
 
-    const printFormData = () => {
-        console.log(name)
-        console.log(companyName)
-        console.log(email)
-        console.log(phone)
-        console.log(message)
-        console.log(mailSent)
-        console.log(error)
+    const handleFormChanges = (e) => {
+        const { name, value } = e.target;
+        setState(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
+
     }
 
-    const handleFormSubmit = () => {
-        printFormData()
-    }
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault()
+
+        console.log(state)
+    };
+
 
 
     return (
@@ -119,8 +123,8 @@ function ContactForm() {
             <Label>
                 Nombre
             <Input
-                    value={name}
-                    onChange={e => setName(e.target.value)}
+                    value={state.name}
+                    onChange={e => setState(e.target.value)}
                     placeholder="Nombre"
                     type="text"
                     name="name"
@@ -131,8 +135,8 @@ function ContactForm() {
             <Label>
                 Nombre empresa
             <Input
-                    value={companyName}
-                    onChange={e => setCompanyName(e.target.value)}
+                    value={state.companyName}
+                    onChange={e => setState(e.target.value)}
                     placeholder="Nombre de tu empresa"
                     type="text"
                     name="companyName"
@@ -143,8 +147,8 @@ function ContactForm() {
             <Label>
                 Email
             <Input
-                    value={email}
-                    onChange={e => setEmail(e.target.value)}
+                    value={state.email}
+                    onChange={e => setState(e.target.value)}
                     placeholder="Dirección email"
                     type="email"
                     name="email"
@@ -155,8 +159,8 @@ function ContactForm() {
             <Label>
                 Teléfono (opcional)
             <Input
-                    value={phone}
-                    onChange={e => setPhone(e.target.value)}
+                    value={state.phone}
+                    onChange={e => setState(e.target.value)}
                     placeholder="N° de teléfono"
                     type="text"
                     name="phone"
@@ -166,8 +170,8 @@ function ContactForm() {
             <Label className="textarea-label">
                 Mensaje
             <Textarea
-                    value={message}
-                    onChange={e => setMessage(e.target.value)}
+                    value={state.message}
+                    onChange={e => setState(e.target.value)}
                     placeholder="Escribí tu mensaje"
                     type="textarea"
                     name="message"
