@@ -90,6 +90,8 @@ body, html, #root{
   height:100%;
 }
 
-body.opened-menu {
-  overflow: hidden;
+@media all and (max-width: 992px) {
+  body.opened-menu {  
+    overflow: hidden;
+  }
 }
