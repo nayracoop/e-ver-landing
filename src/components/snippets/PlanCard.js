@@ -23,6 +23,15 @@ const PlansWrapper = styled.li`
         margin: 25px auto;
     }
 `
+const PlansInnerWrapper = styled(Wrapper)`
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: calc(100% - 60px);
+    justify-content: space-between;
+
+`
 
 const Title = styled.h2`
     font-family: 'rotundabold', sans-serif;
@@ -61,7 +70,7 @@ const ServiceStatus = styled.span`
 
 const ServicesList = styled.ul`
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 `
 const Item = styled.li`
         font-family: 'rotundalight', sans-serif;
@@ -74,7 +83,7 @@ const Item = styled.li`
 
 const Icon = styled.img`
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     pointer-events: none;
     @media (max-width: ${(props) => props.theme.pageWidth.m}px) {
         height: 120px;
@@ -83,12 +92,14 @@ const Icon = styled.img`
 
 const PlanButton = styled(Button)`
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 `
 
 const PlanCard = (props) => {
     return (
         <PlansWrapper >
-            <Wrapper>
+            <PlansInnerWrapper>
                 <Icon height="130" src={require('../../assets/img/' + props.icon + '.svg')} ></Icon>
                 <Title>{props.name}</Title>
                 <ServicesList>
@@ -102,7 +113,7 @@ const PlanCard = (props) => {
                         })}
                 </ServicesList>
                 <PlanButton link="contacto" btnText={props.btnText} />
-            </Wrapper>
+            </PlansInnerWrapper>
         </PlansWrapper >
     )
 }
