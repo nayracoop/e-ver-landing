@@ -6,7 +6,7 @@ const SliderContainer = styled.div`
     height:auto;
     display: flex;
     transform: translate(${props => props.translate}px);
-    transition: all ease-in-out .5s
+    transition: all ease-in-out .5s;
 `
 const SlideContainer = styled.div`
     flex: 1;

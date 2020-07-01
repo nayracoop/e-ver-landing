@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Button from './Button'
-import Bg from '../../assets/img/bg-slider.svg'
 
 const SlideContainer = styled.div`
     width: 100%;
@@ -10,10 +9,7 @@ const SlideContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
-    background-image: url(${Bg});
-    background-position: bottom center;
-    background-repeat: no-repeat;
+    background: transparent;
     @media (max-width: ${(props) => props.theme.pageWidth.l}px) {
         height: unset;
         min-height: 650px;
